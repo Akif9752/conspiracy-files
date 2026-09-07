@@ -308,7 +308,8 @@ CREATE TABLE file_link (
   from_file_id  uuid NOT NULL REFERENCES file(id) ON DELETE CASCADE,
   to_file_id    uuid NOT NULL REFERENCES file(id) ON DELETE CASCADE,
   relation      link_relation NOT NULL,
-  rationale     text NOT NULL,        -- eine Zeile, wird dem Nutzer angezeigt
+  rationale     text NOT NULL,        -- Wegbeschriftung in Vorwaertsrichtung
+  rationale_reverse text NOT NULL,    -- Wegbeschriftung in Gegenrichtung (Befund F-4)
   strength      smallint NOT NULL DEFAULT 5 CHECK (strength BETWEEN 1 AND 10),
   approved_by   uuid REFERENCES editor(id),   -- keine Auto-Publikation
   created_at    timestamptz NOT NULL DEFAULT now(),
@@ -321,7 +322,28 @@ CREATE INDEX file_link_traverse_idx ON file_link (from_file_id, relation, streng
 ```
 
 `rationale` wird im Rabbit Hole wörtlich als Wegbeschriftung genutzt:
-> `→ THE DOCUMENTED CORE — Project Blue Book war die reale Untersuchung, auf die sich Majestic 12 beruft.`
+> `→ THE DOCUMENTED CORE — Project Mogul war das klassifizierte Programm, dessen Geheimhaltung die falsche Wetterballon-Erklärung nötig machte.`
+
+### Bidirektionale Traversierung (Befund F-4)
+
+Kanten sind semantisch gerichtet, werden im Rabbit Hole aber **in beide
+Richtungen** begangen — ohne Rückwärtstraversierung ist der Graph praktisch
+unbegehbar. Deshalb trägt jede Kante zwei Begründungen, und jeder Relationstyp
+zwei Labels:
+
+| Relation | `from` → `to` | Label vorwärts | Label rückwärts |
+|---|---|---|---|
+| `spawned` | Ursprung → Ableger | WHAT IT BECAME | WHERE IT CAME FROM |
+| `precursor_of` | früher → später | WHAT CAME AFTER | WHAT CAME BEFORE |
+| `escalates` | milder → radikaler | IT GOES FURTHER | THE MILDER VERSION |
+| `rebutted_by` | Behauptung → Widerlegung | THE REBUTTAL | WHAT IT REBUTS |
+| `documented_basis` | spekulativ → belegt | THE DOCUMENTED CORE | WHAT WAS BUILT ON IT |
+| `shares_actor` | symmetrisch | SHARES AN ACTOR | SHARES AN ACTOR |
+| `shares_event` | symmetrisch | SHARES AN EVENT | SHARES AN EVENT |
+| `contradicts` | symmetrisch | THESE CANNOT BOTH BE TRUE | THESE CANNOT BOTH BE TRUE |
+
+Maschinenlesbar in [`../content/reference/links.json`](../content/reference/links.json)
+unter `direction_semantics`.
 
 ### 3.8 Quiz
 
@@ -451,21 +473,38 @@ für eine damals korrekte Einschätzung bestraft.
 Kandidaten für den nächsten Knoten — eine Query, kein Graph-Framework:
 
 ```sql
--- $1 aktueller Knoten, $2 dessen Obscurity, $3 bereits besuchte File-IDs
+-- $1 aktueller Knoten, $2 HIGH-WATER MARK des Runs, $3 besuchte File-IDs
+-- Kanten werden bidirektional betrachtet; das Label richtet sich nach der Laufrichtung.
+WITH edges AS (
+  SELECT to_file_id AS next_id, relation, strength,
+         rationale AS label, 'forward' AS direction
+  FROM file_link WHERE from_file_id = $1
+  UNION ALL
+  SELECT from_file_id, relation, strength,
+         rationale_reverse, 'reverse'
+  FROM file_link WHERE to_file_id = $1
+)
 SELECT f.id, f.file_number, f.title, f.obscurity_score,
-       l.relation, l.rationale
-FROM file_link l
-JOIN file_public f ON f.id = l.to_file_id
-WHERE l.from_file_id = $1
-  AND f.obscurity_score >= $2 - 1
-  AND NOT (f.id = ANY($3))
+       e.relation, e.label, e.direction
+FROM edges e
+JOIN file_public f ON f.id = e.next_id
+WHERE NOT (f.id = ANY($3))
+  AND (
+        f.obscurity_score >= $2 - 1        -- Monotonie gegen den High-Water Mark
+     OR e.relation = 'documented_basis'    -- Ausnahme, siehe Befund F-3
+      )
 ORDER BY
-  -- documented_basis regelmäßig einstreuen, damit der Run geerdet bleibt
-  (l.relation = 'documented_basis') DESC,
-  l.strength DESC,
+  (e.relation = 'documented_basis') DESC,  -- Anchor-Schritte einstreuen
+  e.strength DESC,
   f.obscurity_score DESC
 LIMIT 3;
 ```
+
+**Die Monotonie gilt gegen den High-Water Mark des Runs, nicht gegen den
+Vorgängerknoten**, und `documented_basis` ist von ihr befreit. Ohne diese
+Ausnahme blockiert die Regel systematisch genau den Kantentyp, der den Run
+erden soll — im Trockenlauf gemessen, siehe
+[`05-DRY-RUN.md`](05-DRY-RUN.md) Befund F-3.
 
 Reachability-Vorberechnung (nächtlicher Job) verhindert Sackgassen:
 
@@ -524,6 +563,8 @@ Als Constraint-Trigger auf `file.editorial_state = 'published'`:
 
 ```
 ✓ tier = 'a_full'  → ≥ 8 Quellen, ≥ 5 Kanten, ≥ 5 Quizfragen, alle Abschnitte gefüllt
+   AUSNAHME: Kern-Claim mit no_evidentiary_basis = true → ≥ 5 Quellen,
+             davon ≥ 2 vom Typ primary_claimant  (Gate G-PROVENANCE, Befund F-7)
 ✓ tier = 'b_file'  → ≥ 3 Quellen, ≥ 3 Kanten, ≥ 2 Quizfragen
 ✓ tier = 'c_index' → ≥ 1 Quelle,  ≥ 1 Kante
 ✓ genau ein claim.is_core = true
@@ -535,7 +576,17 @@ Als Constraint-Trigger auf `file.editorial_state = 'published'`:
 ✓ jede entity mit is_living_private_person=true hat role ≠ 'alleged_actor'
 ```
 
-Die letzte Regel ist die wichtigste Rechtsschranke: **Eine lebende Privatperson
+Ausführbar gegen den Referenz-Content mit
+[`../tools/validate.py`](../tools/validate.py).
+
+**Zur G-SRC-MIN-Ausnahme:** Eine Behauptung ohne jede Evidenzgrundlage hat
+keine Evidenzliteratur, die sich zitieren ließe. Ein Gate, das ausgerechnet
+den schwächst belegten Behauptungen die meisten Belege abverlangt, ist falsch
+herum gedacht. Verlangt werden stattdessen **Herkunftsquellen**: wer die
+Behauptung wann in welcher Form aufgestellt hat. Bei solchen Files ist die
+Provenienz die eigentliche Rechercheleistung.
+
+Die vorletzte Regel ist die wichtigste Rechtsschranke: **Eine lebende Privatperson
 kann in diesem Datenmodell nicht als mutmaßlicher Täter einer unbelegten
 Behauptung gespeichert werden.** Nur als `target_of_claim` — also als jemand,
 der von einer Behauptung betroffen ist.

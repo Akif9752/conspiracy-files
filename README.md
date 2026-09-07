@@ -19,6 +19,17 @@ Zuerst steht das Produkt, dann der Build.
 | **[docs/01-DATA-MODEL.md](docs/01-DATA-MODEL.md)** | Entitäten, Beziehungen, Postgres-DDL, Score-Berechnung, Pfadabfragen, Publish-Gates |
 | **[docs/02-EDITORIAL-POLICY.md](docs/02-EDITORIAL-POLICY.md)** | Evidenzsystem, Harm-Tiers, Quellenregeln, KI-Einsatzgrenzen, Sprachregeln |
 | **[docs/03-MVP-SCOPE.md](docs/03-MVP-SCOPE.md)** | Feature-Priorisierung, Cut-Liste, Launch-Checkliste, Roadmap, Metriken, offene Entscheidungen |
+| **[docs/04-WRITING-STANDARD.md](docs/04-WRITING-STANDARD.md)** | Schreibstandard für Autor:innen: Arbeitsreihenfolge, Claim-Zerlegung, Hooks, Verkantung, Abgabe-Checkliste |
+| **[docs/05-DRY-RUN.md](docs/05-DRY-RUN.md)** | Trockenlauf der 10 Referenz-Files gegen Schema und Rabbit-Hole-Logik: sieben Befunde, vier mit Änderungsfolge |
+
+## Referenz-Content
+
+| Pfad | Inhalt |
+|---|---|
+| [`content/reference/files/`](content/reference/files/) | 10 vollständige Referenz-Files — alle 5 Evidence-Status, alle 4 Harm-Tiers |
+| [`content/reference/sources.json`](content/reference/sources.json) | 33 normalisierte Quellen mit auflösbaren Identifiern |
+| [`content/reference/links.json`](content/reference/links.json) | 8 typisierte Kanten inkl. Richtungssemantik |
+| [`tools/validate.py`](tools/validate.py) | Prüft Publish-Gates und simuliert die Rabbit-Hole-Pfadlogik — `python3 tools/validate.py` |
 
 ---
 
@@ -49,10 +60,12 @@ LEVEL UP ← XP ← QUIZ ← CALIBRATION ← DEEPER FILE
 
 ## Nächste Schritte
 
-1. Editorial Policy abnehmen
-2. Datenmodell abnehmen
-3. CMS + Review-Queue bauen
-4. 10 Referenz-Files in voller Tiefe schreiben
-5. Design-System + 3 Kern-Screens als Prototyp
-6. Rabbit-Hole-Algorithmus gegen die Referenz-Files testen
-7. Content-Produktion hochfahren, App-Entwicklung parallel starten
+1. ~~Editorial Policy abnehmen~~ → Entwurf steht, Abnahme offen
+2. ~~Datenmodell abnehmen~~ → Entwurf steht, im Trockenlauf korrigiert, Abnahme offen
+3. ~~10 Referenz-Files schreiben~~ → ✅ 10 Files, 30 Claims, 28 Quizfragen, 33 Quellen
+4. ~~Rabbit-Hole-Algorithmus testen~~ → ✅ getestet, zwei Regelfehler gefunden und behoben
+5. **Cluster-Plan schreiben** — die ersten 12 Cluster à 8–15 Files definieren den Launch-Content
+6. Referenz-Files auf volle Produktionstiefe bringen (8 Quellen, 5 Fragen, 5 Kanten je Tier A)
+7. CMS + Review-Queue bauen
+8. Design-System + 3 Kern-Screens als Prototyp
+9. Content-Produktion hochfahren, App-Entwicklung parallel starten

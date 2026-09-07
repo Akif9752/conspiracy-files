@@ -1,0 +1,309 @@
+{
+  "_note": "Normalisierte Quellen. Jede Quelle braucht mindestens einen auflösbaren Identifier (url | doi | isbn | archive_ref). Vor Publish muss der Fact-Check zusätzlich die Erreichbarkeit prüfen und wo möglich URL/DOI ergänzen.",
+  "sources": [
+    {
+      "id": "src-church-book1",
+      "kind": "official_inquiry",
+      "title": "Final Report of the Select Committee to Study Governmental Operations with Respect to Intelligence Activities, Book I: Foreign and Military Intelligence",
+      "author": "United States Senate, Select Committee (Church Committee)",
+      "published_on": "1976-04-26",
+      "archive_ref": "S. Rep. No. 94-755, Book I (94th Cong., 2d Sess., 1976)",
+      "reliability_tier": 1
+    },
+    {
+      "id": "src-mkultra-hearing-1977",
+      "kind": "official_inquiry",
+      "title": "Project MKULTRA, The CIA's Program of Research in Behavioral Modification. Joint Hearing before the Select Committee on Intelligence and the Subcommittee on Health and Scientific Research",
+      "author": "United States Senate",
+      "published_on": "1977-08-03",
+      "archive_ref": "Joint Hearing, 95th Cong., 1st Sess., August 3, 1977 (U.S. GPO)",
+      "reliability_tier": 1
+    },
+    {
+      "id": "src-rockefeller-1975",
+      "kind": "official_inquiry",
+      "title": "Report to the President by the Commission on CIA Activities within the United States",
+      "author": "Commission on CIA Activities within the United States (Rockefeller Commission)",
+      "published_on": "1975-06-06",
+      "archive_ref": "Rockefeller Commission Report, June 1975 (U.S. GPO)",
+      "reliability_tier": 1
+    },
+    {
+      "id": "src-marks-1979",
+      "kind": "investigative_journalism",
+      "title": "The Search for the Manchurian Candidate: The CIA and Mind Control",
+      "author": "John D. Marks",
+      "publisher": "Times Books",
+      "published_on": "1979-01-01",
+      "archive_ref": "Marks, J. (1979). Times Books, New York.",
+      "reliability_tier": 2,
+      "access_note": "Basiert auf ~16.000 Seiten MKULTRA-Finanzakten, die Marks 1977 per FOIA erlangte."
+    },
+    {
+      "id": "src-northwoods-memo",
+      "kind": "declassified_record",
+      "title": "Justification for US Military Intervention in Cuba (Memorandum for the Secretary of Defense)",
+      "author": "Joint Chiefs of Staff, Chairman Lyman L. Lemnitzer",
+      "published_on": "1962-03-13",
+      "archive_ref": "JCS memorandum, 13 March 1962; released 1997 by the Assassination Records Review Board, NARA JFK Collection",
+      "reliability_tier": 1
+    },
+    {
+      "id": "src-bamford-2001",
+      "kind": "investigative_journalism",
+      "title": "Body of Secrets: Anatomy of the Ultra-Secret National Security Agency",
+      "author": "James Bamford",
+      "publisher": "Doubleday",
+      "published_on": "2001-04-24",
+      "archive_ref": "Bamford, J. (2001). Doubleday, New York. Kapitel zu Operation Northwoods.",
+      "reliability_tier": 2
+    },
+    {
+      "id": "src-arrb-1998",
+      "kind": "official_inquiry",
+      "title": "Final Report of the Assassination Records Review Board",
+      "author": "Assassination Records Review Board",
+      "published_on": "1998-09-30",
+      "archive_ref": "ARRB Final Report, September 1998 (U.S. GPO)",
+      "reliability_tier": 1
+    },
+    {
+      "id": "src-warren-1964",
+      "kind": "official_inquiry",
+      "title": "Report of the President's Commission on the Assassination of President John F. Kennedy",
+      "author": "President's Commission on the Assassination of President Kennedy (Warren Commission)",
+      "published_on": "1964-09-24",
+      "archive_ref": "Warren Commission Report, 24 September 1964 (U.S. GPO)",
+      "reliability_tier": 1
+    },
+    {
+      "id": "src-hsca-1979",
+      "kind": "official_inquiry",
+      "title": "Report of the Select Committee on Assassinations of the U.S. House of Representatives",
+      "author": "United States House of Representatives, Select Committee on Assassinations",
+      "published_on": "1979-03-29",
+      "archive_ref": "H. Rept. 95-1828, Part 2 (95th Cong., 2d Sess., 1979)",
+      "reliability_tier": 1
+    },
+    {
+      "id": "src-nrc-ballistic-1982",
+      "kind": "peer_reviewed",
+      "title": "Report of the Committee on Ballistic Acoustics",
+      "author": "National Research Council, Committee on Ballistic Acoustics (Chair: Norman F. Ramsey)",
+      "publisher": "National Academy Press",
+      "published_on": "1982-01-01",
+      "archive_ref": "National Research Council (1982). National Academy Press, Washington DC.",
+      "reliability_tier": 1
+    },
+    {
+      "id": "src-kaysing-1976",
+      "kind": "primary_claimant",
+      "title": "We Never Went to the Moon: America's Thirty Billion Dollar Swindle",
+      "author": "Bill Kaysing with Randy Reid",
+      "published_on": "1976-01-01",
+      "archive_ref": "Kaysing, B. (1976). Selbstverlag / Health Research.",
+      "reliability_tier": 3,
+      "access_note": "QUELLE DER BEHAUPTUNG — belegt nur, dass und wann die Behauptung aufgestellt wurde, nicht ihren Inhalt."
+    },
+    {
+      "id": "src-lro-2011",
+      "kind": "primary_document",
+      "title": "Lunar Reconnaissance Orbiter Camera imagery of the Apollo landing sites",
+      "author": "NASA / LROC Science Operations Center, Arizona State University",
+      "published_on": "2011-09-06",
+      "archive_ref": "LROC NAC imagery of Apollo 12, 14 und 17, aufgenommen aus ca. 21 km Orbit, veröffentlicht September 2011; erste Aufnahmen Juli 2009.",
+      "reliability_tier": 1
+    },
+    {
+      "id": "src-llr-retroreflectors",
+      "kind": "peer_reviewed",
+      "title": "Lunar Laser Ranging: A Continuing Legacy of the Apollo Program",
+      "author": "J. O. Dickey et al.",
+      "published_on": "1994-07-22",
+      "archive_ref": "Science, Vol. 265, Issue 5171, pp. 482-490 (1994)",
+      "reliability_tier": 1,
+      "access_note": "Belegt die fortlaufende Nutzung der von Apollo 11, 14 und 15 aufgestellten Retroreflektoren."
+    },
+    {
+      "id": "src-apollo-samples",
+      "kind": "reference_work",
+      "title": "Lunar Sample Compendium / Apollo Sample Curation",
+      "author": "NASA Astromaterials Acquisition and Curation Office",
+      "archive_ref": "NASA Johnson Space Center, Astromaterials Curation: 382 kg Mondgestein aus sechs Apollo-Landungen, verteilt an Labore weltweit.",
+      "reliability_tier": 1
+    },
+    {
+      "id": "src-af-roswell-1994",
+      "kind": "official_inquiry",
+      "title": "The Roswell Report: Fact vs. Fiction in the New Mexico Desert",
+      "author": "United States Air Force (Richard L. Weaver, James McAndrew)",
+      "published_on": "1994-09-01",
+      "archive_ref": "Headquarters United States Air Force (1994), U.S. GPO",
+      "reliability_tier": 1
+    },
+    {
+      "id": "src-af-roswell-1997",
+      "kind": "official_inquiry",
+      "title": "The Roswell Report: Case Closed",
+      "author": "United States Air Force (James McAndrew)",
+      "published_on": "1997-06-24",
+      "archive_ref": "Headquarters United States Air Force (1997), U.S. GPO",
+      "reliability_tier": 1
+    },
+    {
+      "id": "src-gao-1995",
+      "kind": "official_inquiry",
+      "title": "Government Records: Results of a Search for Records Concerning the 1947 Crash Near Roswell, New Mexico",
+      "author": "United States General Accounting Office",
+      "published_on": "1995-07-28",
+      "archive_ref": "GAO/NSIAD-95-187 (July 1995)",
+      "reliability_tier": 1
+    },
+    {
+      "id": "src-raaf-release-1947",
+      "kind": "contemporary_press",
+      "title": "RAAF Captures Flying Saucer On Ranch in Roswell Region",
+      "author": "Roswell Daily Record",
+      "published_on": "1947-07-08",
+      "archive_ref": "Roswell Daily Record, 8 July 1947, Titelseite; auf Grundlage der Pressemitteilung des Roswell Army Air Field.",
+      "reliability_tier": 3
+    },
+    {
+      "id": "src-moore-mogul",
+      "kind": "primary_claimant",
+      "title": "Zeugenaussage und technische Rekonstruktion des Project-Mogul-Ballonzuges",
+      "author": "Charles B. Moore",
+      "archive_ref": "Aussagen und technische Angaben Moores, dokumentiert in The Roswell Report: Fact vs. Fiction (1994), Anhang.",
+      "reliability_tier": 2,
+      "access_note": "Moore war Projektingenieur der NYU-Ballongruppe von Project Mogul."
+    },
+    {
+      "id": "src-fbi-mj12",
+      "kind": "declassified_record",
+      "title": "FBI-Akte zu 'Majestic 12' / MJ-12 documents",
+      "author": "United States Federal Bureau of Investigation",
+      "archive_ref": "FBI Records: The Vault, Akte 'Majestic 12'; die Aktenkopie der Dokumente trägt die Anmerkung 'BOGUS'.",
+      "reliability_tier": 1
+    },
+    {
+      "id": "src-klass-mj12",
+      "kind": "investigative_journalism",
+      "title": "Analysen der MJ-12-Dokumente (Schriftbild, Datumsformat, Unterschrift)",
+      "author": "Philip J. Klass",
+      "published_on": "1988-01-01",
+      "archive_ref": "Klass, P. J., Beiträge in Skeptical Inquirer, Bände 12-14 (1987-1990).",
+      "reliability_tier": 2
+    },
+    {
+      "id": "src-truman-bush-1947",
+      "kind": "primary_document",
+      "title": "Brief von Präsident Harry S. Truman an Vannevar Bush, 1. Oktober 1947",
+      "author": "Harry S. Truman",
+      "published_on": "1947-10-01",
+      "archive_ref": "Harry S. Truman Presidential Library, Independence, Missouri.",
+      "reliability_tier": 1,
+      "access_note": "Die Truman-Unterschrift auf dem angeblichen MJ-12-Memo stimmt mit der auf diesem Brief bis in Details überein — Hinweis auf eine Fotokopie."
+    },
+    {
+      "id": "src-monast-1994",
+      "kind": "primary_claimant",
+      "title": "Project Blue Beam (NASA)",
+      "author": "Serge Monast",
+      "published_on": "1994-01-01",
+      "archive_ref": "Monast, S. (1994), Vortragstext / Broschüre, Québec.",
+      "reliability_tier": 3,
+      "access_note": "QUELLE DER BEHAUPTUNG — belegt Urheberschaft und Datierung, nicht den Inhalt."
+    },
+    {
+      "id": "src-wakefield-1998-retracted",
+      "kind": "primary_claimant",
+      "title": "Ileal-lymphoid-nodular hyperplasia, non-specific colitis, and pervasive developmental disorder in children [RETRACTED]",
+      "author": "A. J. Wakefield et al.",
+      "published_on": "1998-02-28",
+      "archive_ref": "The Lancet, Vol. 351, Issue 9103, pp. 637-641 (1998). Vollständig zurückgezogen am 2. Februar 2010.",
+      "reliability_tier": 3,
+      "access_note": "ZURÜCKGEZOGEN. Zitiert ausschließlich als Ursprung der Behauptung."
+    },
+    {
+      "id": "src-lancet-retraction-2010",
+      "kind": "peer_reviewed",
+      "title": "Retraction — Ileal-lymphoid-nodular hyperplasia, non-specific colitis, and pervasive developmental disorder in children",
+      "author": "The Editors of The Lancet",
+      "published_on": "2010-02-06",
+      "archive_ref": "The Lancet, Vol. 375, Issue 9713, p. 445 (2010)",
+      "reliability_tier": 1
+    },
+    {
+      "id": "src-gmc-2010",
+      "kind": "official_inquiry",
+      "title": "Fitness to Practise Panel Determination on Serious Professional Misconduct and Sanction (Wakefield, Walker-Smith, Murch)",
+      "author": "General Medical Council (UK)",
+      "published_on": "2010-05-24",
+      "archive_ref": "GMC Fitness to Practise Panel, 24 May 2010; Wakefield wurde aus dem britischen Ärzteregister gestrichen.",
+      "reliability_tier": 1
+    },
+    {
+      "id": "src-deer-bmj-2011",
+      "kind": "investigative_journalism",
+      "title": "How the case against the MMR vaccine was fixed",
+      "author": "Brian Deer",
+      "published_on": "2011-01-05",
+      "archive_ref": "BMJ 2011;342:c5347",
+      "reliability_tier": 1
+    },
+    {
+      "id": "src-madsen-2002",
+      "kind": "peer_reviewed",
+      "title": "A Population-Based Study of Measles, Mumps, and Rubella Vaccination and Autism",
+      "author": "K. M. Madsen et al.",
+      "published_on": "2002-11-07",
+      "archive_ref": "New England Journal of Medicine 2002;347:1477-1482. Kohorte: 537.303 Kinder.",
+      "reliability_tier": 1
+    },
+    {
+      "id": "src-hviid-2019",
+      "kind": "peer_reviewed",
+      "title": "Measles, Mumps, Rubella Vaccination and Autism: A Nationwide Cohort Study",
+      "author": "A. Hviid, J. V. Hansen, M. Frisch, M. Melbye",
+      "published_on": "2019-04-16",
+      "archive_ref": "Annals of Internal Medicine 2019;170(8):513-520. Kohorte: 657.461 Kinder.",
+      "reliability_tier": 1
+    },
+    {
+      "id": "src-taylor-2014",
+      "kind": "peer_reviewed",
+      "title": "Vaccines are not associated with autism: an evidence-based meta-analysis of case-control and cohort studies",
+      "author": "L. E. Taylor, A. L. Swerdfeger, G. D. Eslick",
+      "published_on": "2014-06-17",
+      "archive_ref": "Vaccine 2014;32(29):3623-3629. Metaanalyse über 1.266.327 Kinder.",
+      "reliability_tier": 1
+    },
+    {
+      "id": "src-who-uk-elimination-2019",
+      "kind": "official_inquiry",
+      "title": "Verlust des WHO-Masern-Eliminationsstatus für das Vereinigte Königreich",
+      "author": "World Health Organization, European Regional Verification Commission for Measles and Rubella Elimination",
+      "published_on": "2019-08-29",
+      "archive_ref": "WHO Regional Office for Europe, Bekanntgabe August 2019.",
+      "reliability_tier": 1
+    },
+    {
+      "id": "src-welch-sentencing-2017",
+      "kind": "court_record",
+      "title": "United States v. Edgar Maddison Welch — Verurteilung",
+      "author": "United States District Court for the District of Columbia",
+      "published_on": "2017-06-22",
+      "archive_ref": "U.S. District Court, District of Columbia; Verurteilung zu vier Jahren Haft am 22. Juni 2017.",
+      "reliability_tier": 1
+    },
+    {
+      "id": "src-lanning-1992",
+      "kind": "official_inquiry",
+      "title": "Investigator's Guide to Allegations of 'Ritual' Child Abuse",
+      "author": "Kenneth V. Lanning, FBI Behavioral Science Unit",
+      "published_on": "1992-01-01",
+      "archive_ref": "FBI Behavioral Science Unit, National Center for the Analysis of Violent Crime, January 1992.",
+      "reliability_tier": 1
+    }
+  ]
+}

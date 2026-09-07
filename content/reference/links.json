@@ -1,0 +1,55 @@
+{
+  "_note": "Typisierte Kanten. Richtung ist semantisch: siehe direction_semantics. Traversierung im Rabbit Hole erfolgt in BEIDE Richtungen; das Label richtet sich nach der Laufrichtung.",
+  "direction_semantics": {
+    "spawned":          { "from": "Ursprung", "to": "Ableger",        "label_forward": "WHAT IT BECAME",       "label_reverse": "WHERE IT CAME FROM" },
+    "precursor_of":     { "from": "früher",   "to": "später",          "label_forward": "WHAT CAME AFTER",      "label_reverse": "WHAT CAME BEFORE" },
+    "shares_actor":     { "symmetric": true,                            "label_forward": "SHARES AN ACTOR",      "label_reverse": "SHARES AN ACTOR" },
+    "shares_event":     { "symmetric": true,                            "label_forward": "SHARES AN EVENT",      "label_reverse": "SHARES AN EVENT" },
+    "escalates":        { "from": "milder",   "to": "radikaler",       "label_forward": "IT GOES FURTHER",      "label_reverse": "THE MILDER VERSION" },
+    "contradicts":      { "symmetric": true,                            "label_forward": "THESE CANNOT BOTH BE TRUE", "label_reverse": "THESE CANNOT BOTH BE TRUE" },
+    "rebutted_by":      { "from": "Behauptung", "to": "Widerlegung",   "label_forward": "THE REBUTTAL",         "label_reverse": "WHAT IT REBUTS" },
+    "documented_basis": { "from": "spekulativ", "to": "belegt",        "label_forward": "THE DOCUMENTED CORE",  "label_reverse": "WHAT WAS BUILT ON IT" }
+  },
+  "links": [
+    {
+      "from": 4, "to": 1, "relation": "shares_actor", "strength": 7,
+      "rationale": "Beide Programme wurden zum Hauptgegenstand derselben Untersuchung: das Church Committee prüfte 1975/76 sowohl die CIA-Rolle im Umfeld der Kennedy-Ermittlungen als auch MKULTRA.",
+      "rationale_reverse": "MKULTRA und die zurückgehaltenen Kennedy-Akten wurden von derselben Senatsuntersuchung offengelegt."
+    },
+    {
+      "from": 4, "to": 2, "relation": "shares_event", "strength": 8,
+      "rationale": "Das Northwoods-Memorandum wurde 1997 über dieselbe Freigabestelle öffentlich, die für die Kennedy-Akten geschaffen wurde — das Assassination Records Review Board.",
+      "rationale_reverse": "Northwoods kam nur ans Licht, weil der JFK Records Act von 1992 eine breite Freigabe von Akten der Kennedy-Ära erzwang."
+    },
+    {
+      "from": 8, "to": 2, "relation": "documented_basis", "strength": 9,
+      "rationale": "Blue Beam behauptet eine inszenierte Täuschung der Öffentlichkeit durch eine US-Behörde. Northwoods ist der dokumentierte Fall, in dem ein US-Gremium genau das förmlich vorschlug — und in dem es abgelehnt wurde.",
+      "rationale_reverse": "Northwoods wird regelmäßig als Generalbeleg für spätere Inszenierungsbehauptungen herangezogen. Blue Beam ist ein Beispiel dafür, wie weit dieser Schluss getragen wird."
+    },
+    {
+      "from": 3, "to": 8, "relation": "shares_actor", "strength": 6,
+      "rationale": "In beiden Behauptungen ist NASA die handelnde Instanz einer angeblichen Inszenierung — einmal rückblickend, einmal vorausschauend.",
+      "rationale_reverse": "Blue Beam überträgt das Muster der Mondlandungs-Behauptung auf ein zukünftiges Ereignis: dieselbe Behörde, dieselbe unterstellte Fähigkeit zur perfekten Fälschung."
+    },
+    {
+      "from": 5, "to": 6, "relation": "documented_basis", "strength": 10,
+      "rationale": "Der Bericht der US Air Force von 1994 identifiziert die Roswell-Trümmer als Material aus Project Mogul — dem klassifizierten Programm, dessen Geheimhaltung die falsche Wetterballon-Erklärung überhaupt erst nötig machte.",
+      "rationale_reverse": "Mogul ist der reale Kern hinter dem bekanntesten UFO-Fall der Welt."
+    },
+    {
+      "from": 5, "to": 7, "relation": "spawned", "strength": 8,
+      "rationale": "Die MJ-12-Dokumente tauchten erst auf, nachdem Roswell ab 1978 wieder öffentlich verhandelt wurde, und geben der behaupteten Bergung nachträglich eine institutionelle Struktur.",
+      "rationale_reverse": "Majestic 12 ist der Versuch, der Roswell-Erzählung ein Dokument zu geben, das sie bis dahin nicht hatte."
+    },
+    {
+      "from": 6, "to": 7, "relation": "contradicts", "strength": 7,
+      "rationale": "Mogul und Majestic 12 sind zwei einander ausschließende Erklärungen für dieselben Trümmer: ein klassifiziertes Ballonprogramm oder eine außerirdische Bergung.",
+      "rationale_reverse": "Majestic 12 setzt voraus, dass die Mogul-Erklärung falsch ist — liefert dafür aber nur ein Dokument ohne Herkunft."
+    },
+    {
+      "from": 7, "to": 8, "relation": "contradicts", "strength": 4,
+      "rationale": "Majestic 12 behauptet, echter außerirdischer Kontakt werde verheimlicht. Blue Beam behauptet, außerirdischer Kontakt werde vorgetäuscht. Beide können nicht zutreffen.",
+      "rationale_reverse": "Blue Beam kehrt die Grundannahme von Majestic 12 um: nicht Verheimlichung des Echten, sondern Inszenierung des Unechten."
+    }
+  ]
+}

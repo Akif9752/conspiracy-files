@@ -1,0 +1,107 @@
+{
+  "file_number": 9,
+  "slug": "vaccines-autism",
+  "title": "VACCINES AND AUTISM",
+  "subtitle": "One retracted paper, twelve children, and a measles resurgence",
+  "tier": "a_full",
+  "editorial_state": "in_review",
+  "_structure_note": "HARM TIER 2 — inverted layout. Context and consequences precede the claim. No THE ARGUMENTS section: the arguments are described and situated, never reconstructed in their most persuasive form. Replaced by WHY IT SPREAD.",
+  "harm_tier": 2,
+  "harm_note": "Health misinformation with documented mortality. Layout inverted per editorial policy §3. Requires second-editor sign-off before publish.",
+  "summary": "The claim rests on a single 1998 paper describing twelve children. The paper was retracted in full, its lead author was struck off the medical register for serious professional misconduct, and an investigation published in the BMJ documented that the data had been altered. Studies since have followed more than two million children and found no association.",
+  "context_and_consequences": "Measles is among the most contagious diseases known and can cause encephalitis, permanent disability and death. After the 1998 paper, MMR uptake in the United Kingdom fell from around 92 per cent to roughly 80 per cent within five years — well below the level required to interrupt transmission. In 2019 the United Kingdom lost the measles elimination status it had achieved. In the same year an outbreak in Samoa, following a collapse in vaccination coverage, killed more than eighty people, most of them children under five. These are the documented consequences of the claim, and this file states them before it states the claim, because presenting the claim first and the consequences last would be a choice about emphasis that this archive is not willing to make.",
+  "origin_note": "The claim originates with a paper published in The Lancet on 28 February 1998 by Andrew Wakefield and twelve co-authors, describing twelve children and proposing a possible link between the MMR vaccine and a novel bowel condition associated with developmental regression.",
+  "story": "The paper itself was cautious in its stated conclusions; the press conference accompanying it was not, and Wakefield called publicly for the suspension of the combined MMR vaccine. Ten of the thirteen authors retracted the paper's interpretation in 2004. In 2010 The Lancet retracted the paper in full and the General Medical Council found Wakefield guilty of serious professional misconduct and erased him from the medical register. In 2011 the journalist Brian Deer published an investigation in the BMJ documenting that the children's records had been altered so that the reported histories did not match the medical notes; the BMJ's editors described the work as fraudulent. Meanwhile the underlying question had been examined at population scale: a Danish cohort of 537,303 children published in 2002, a meta-analysis covering 1,266,327 children in 2014, and a second Danish cohort of 657,461 children in 2019, which specifically tested the subgroups the claim had proposed as vulnerable. None found an association. A separate strand of the claim concerned the preservative thimerosal, which was removed from routine childhood vaccines in the United States by 2001; autism diagnoses continued to rise afterwards, which is the outcome the claim predicted would not occur.",
+  "why_it_spread": "The timing is the whole explanation. The first MMR dose is given at around twelve to fifteen months, and the developmental signs that lead to an autism diagnosis typically become apparent in the same window. Parents observing a real change in their child shortly after a real medical event drew the connection that human beings reliably draw. The claim also arrived with the strongest available institutional credentials — a paper in a leading medical journal, presented by a doctor at a teaching hospital — which is precisely why the correction, when it came, could not reach the same audience. Retractions do not receive press conferences.",
+  "assessment": "This is one of the most thoroughly investigated claims in modern medicine, and the investigation was unusually conclusive: the originating study was not merely wrong but was found to have been altered, and the hypothesis was independently tested at a scale few medical questions ever receive. The claim is not open. Its persistence is a fact about how information moves, not about the evidence.",
+  "current_status_note": "Rejected without qualification by every major public health body and medical association. The original paper is retracted and its author is not licensed to practise medicine in the United Kingdom.",
+  "origin_year": 1998,
+  "period_start": 1998,
+  "period_end": null,
+  "region_code": "GB",
+  "obscurity_score": 1,
+  "categories": ["BODY & MIND", "THE NETWORK"],
+  "tags": ["health-misinfo", "1990s", "mmr", "retracted-research", "measles", "harm-tier-2", "research-fraud"],
+  "entities": [
+    { "name": "Andrew Wakefield", "kind": "person", "role": "source_of_claim" },
+    { "name": "The Lancet", "kind": "publication", "role": "documented_actor" },
+    { "name": "General Medical Council", "kind": "organization", "role": "investigator" },
+    { "name": "Brian Deer", "kind": "person", "role": "investigator" },
+    { "name": "World Health Organization", "kind": "organization", "role": "investigator" }
+  ],
+  "claims": [
+    {
+      "ordinal": 1,
+      "is_core": true,
+      "statement": "The MMR vaccine causes autism.",
+      "claimed_by": "Originating with Andrew Wakefield's 1998 Lancet paper and press conference",
+      "evidence_status": "debunked",
+      "status_rationale": "The originating study was retracted in full and found by investigation to contain altered data; its lead author was struck off for serious professional misconduct. The hypothesis was independently tested in cohorts and meta-analyses covering more than two million children and no association was found.",
+      "evidence_items": [
+        { "stance": "undermines", "source_id": "src-hviid-2019", "statement": "A nationwide Danish cohort of 657,461 children found no increased risk of autism after MMR vaccination, including in the subgroups the claim identified as susceptible." },
+        { "stance": "undermines", "source_id": "src-madsen-2002", "statement": "A Danish cohort of 537,303 children found no association between MMR vaccination and autism." },
+        { "stance": "undermines", "source_id": "src-taylor-2014", "statement": "A meta-analysis of cohort and case-control studies covering 1,266,327 children found no association between vaccination and autism." },
+        { "stance": "undermines", "source_id": "src-lancet-retraction-2010", "statement": "The Lancet retracted the 1998 paper in full on 2 February 2010." },
+        { "stance": "undermines", "source_id": "src-gmc-2010", "statement": "The General Medical Council found Wakefield guilty of serious professional misconduct and erased him from the medical register on 24 May 2010." },
+        { "stance": "undermines", "source_id": "src-deer-bmj-2011", "statement": "Deer's investigation documented that the children's reported histories did not match their medical records, and that the alterations ran consistently in the direction of supporting the claimed link." },
+        { "stance": "context", "source_id": "src-wakefield-1998-retracted", "statement": "The retracted paper described twelve children and did not itself claim to establish causation; the stronger claim was made at the accompanying press conference." }
+      ]
+    },
+    {
+      "ordinal": 2,
+      "is_core": false,
+      "statement": "The preservative thimerosal in vaccines causes autism.",
+      "evidence_status": "debunked",
+      "status_rationale": "Thimerosal was removed from routine childhood vaccines in the United States by 2001. Autism diagnoses continued to rise afterwards — the direct opposite of what the claim predicts. The claim made a testable prediction and the prediction failed.",
+      "evidence_items": [
+        { "stance": "undermines", "source_id": "src-taylor-2014", "statement": "The meta-analysis examined thimerosal-containing vaccines specifically and found no association with autism." }
+      ]
+    },
+    {
+      "ordinal": 3,
+      "is_core": false,
+      "statement": "Falling vaccination rates following the 1998 claim contributed to renewed measles transmission.",
+      "evidence_status": "documented",
+      "status_rationale": "Uptake fell measurably in the years after 1998 and outbreaks followed in populations where coverage dropped below the threshold for interrupting transmission. The United Kingdom's loss of measles elimination status in 2019 is a documented event.",
+      "evidence_items": [
+        { "stance": "supports", "source_id": "src-who-uk-elimination-2019", "statement": "The WHO European Regional Verification Commission determined in August 2019 that the United Kingdom had lost its measles elimination status." }
+      ]
+    }
+  ],
+  "quiz_questions": [
+    {
+      "format": "single_choice",
+      "prompt": "What happened to the 1998 study that started the vaccine-autism claim?",
+      "options": [
+        { "label": "It was confirmed by later research", "is_correct": false },
+        { "label": "It was fully retracted and its lead author was struck off the medical register", "is_correct": true },
+        { "label": "It remains published but disputed", "is_correct": false },
+        { "label": "It was withdrawn by the authors before publication", "is_correct": false }
+      ],
+      "explanation": "The Lancet retracted the paper in 2010 and the General Medical Council erased Wakefield from the register for serious professional misconduct the same year.",
+      "source_id": "src-lancet-retraction-2010",
+      "difficulty": 3
+    },
+    {
+      "format": "single_choice",
+      "prompt": "Roughly how many children have been covered by the studies testing the vaccine-autism hypothesis?",
+      "options": [
+        { "label": "About twelve", "is_correct": false },
+        { "label": "About ten thousand", "is_correct": false },
+        { "label": "More than two million", "is_correct": true },
+        { "label": "The question has never been studied at population scale", "is_correct": false }
+      ],
+      "explanation": "Danish cohorts of 537,303 and 657,461 children and a meta-analysis covering 1,266,327 children all found no association. The original paper described twelve.",
+      "source_id": "src-hviid-2019",
+      "difficulty": 5
+    },
+    {
+      "format": "documented_or_debunked",
+      "prompt": "Removing thimerosal from childhood vaccines was followed by a fall in autism diagnoses.",
+      "options": [{ "label": "DOCUMENTED", "is_correct": false }, { "label": "DEBUNKED", "is_correct": true }],
+      "explanation": "Thimerosal was removed from routine US childhood vaccines by 2001 and diagnoses continued to rise. The claim made a testable prediction and it failed.",
+      "source_id": "src-taylor-2014",
+      "difficulty": 6
+    }
+  ]
+}

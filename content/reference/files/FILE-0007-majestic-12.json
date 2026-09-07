@@ -1,0 +1,88 @@
+{
+  "file_number": 7,
+  "slug": "majestic-12",
+  "title": "MAJESTIC 12",
+  "subtitle": "The secret committee that exists only on photographic film",
+  "tier": "b_file",
+  "editorial_state": "in_review",
+  "summary": "In December 1984 a roll of undeveloped film arrived in a Los Angeles letterbox with no return address. Developed, it showed a briefing document for President-elect Eisenhower describing a secret committee of twelve managing recovered extraterrestrial craft. No original of the document has ever been produced, and the President's signature on it matches, line for line, one on a real letter he wrote about something else entirely.",
+  "origin_note": "The film was received by the television producer Jaime Shandera in December 1984. The document it contained was dated 18 November 1952 and purported to brief the incoming President on a group formed by Truman on 24 September 1947.",
+  "story": "The MJ-12 papers arrived at the point where the Roswell story had been rebuilt into a detailed narrative but still lacked any documentary anchor. They supplied one. Circulated from 1987, they named twelve real and prominent men — scientists, military officers and intelligence officials, all conveniently dead — and gave the Roswell recovery an institutional structure. The FBI opened an inquiry after the documents began circulating and, on the basis of input from the Air Force Office of Special Investigations, concluded they were fabricated; the Bureau's file copy carries the annotation 'BOGUS'. Analysts including Philip Klass identified several distinct problems: the date formats do not match Truman-era White House practice, the typeface is inconsistent with the machines in use, and most decisively the Truman signature on the attached memorandum corresponds to his signature on a genuine letter of 1 October 1947 to Vannevar Bush closely enough to indicate photographic reproduction rather than an independent signing.",
+  "assessment": "MJ-12 is a forgery, and an instructive one. It is the point in the UFO literature where a story that had been assembled from recollection acquired the appearance of documentation, and much of what followed in the field builds on it. Its persistence has less to do with the strength of the documents than with the fact that a photograph of a typed page reads as evidence in a way that a witness interview does not.",
+  "current_status_note": "Regarded as fabricated by the FBI, by the Air Force and by the substantial majority of researchers, including many who accept other elements of the UFO literature. No original document, chain of custody or corroborating record has ever surfaced.",
+  "origin_year": 1984,
+  "period_start": 1952,
+  "period_end": 1990,
+  "region_code": "US",
+  "obscurity_score": 6,
+  "harm_tier": 0,
+  "categories": ["THE SKY", "INTELLIGENCE"],
+  "tags": ["ufo", "1980s", "forgery", "roswell", "documents", "fbi", "eisenhower", "truman"],
+  "entities": [
+    { "name": "Jaime Shandera", "kind": "person", "role": "source_of_claim" },
+    { "name": "Harry S. Truman", "kind": "person", "role": "target_of_claim" },
+    { "name": "Vannevar Bush", "kind": "person", "role": "target_of_claim" },
+    { "name": "Federal Bureau of Investigation", "kind": "organization", "role": "investigator" },
+    { "name": "Philip J. Klass", "kind": "person", "role": "investigator" }
+  ],
+  "claims": [
+    {
+      "ordinal": 1,
+      "is_core": true,
+      "statement": "A secret committee called Majestic 12 was created by President Truman in 1947 to manage recovered extraterrestrial craft and its existence is proved by a briefing document.",
+      "claimed_by": "Jaime Shandera, William Moore and Stanton Friedman, from 1987",
+      "evidence_status": "debunked",
+      "status_rationale": "The document that is the sole basis of the claim shows multiple independent indicators of fabrication, including a signature that appears to have been photographically copied from an unrelated genuine letter. No original exists, no chain of custody exists, and no corroborating record has been found in six decades of declassification.",
+      "evidence_items": [
+        { "stance": "undermines", "source_id": "src-fbi-mj12", "statement": "The Bureau investigated the documents' circulation and, on Air Force input, concluded they were fabricated; the file copy is annotated 'BOGUS'." },
+        { "stance": "undermines", "source_id": "src-truman-bush-1947", "statement": "The Truman signature on the MJ-12 memorandum corresponds in fine detail to the signature on a genuine letter of 1 October 1947, a degree of correspondence that indicates reproduction rather than independent signing." },
+        { "stance": "undermines", "source_id": "src-klass-mj12", "statement": "Analysis identified date formats and typeface characteristics inconsistent with documents produced in the White House and military offices of the period." },
+        { "stance": "context", "source_id": "src-fbi-mj12", "statement": "The documents were delivered anonymously as undeveloped film with no provenance; no original paper document has ever been produced for examination." }
+      ]
+    },
+    {
+      "ordinal": 2,
+      "is_core": false,
+      "statement": "The twelve men named in the documents were real and held the positions described.",
+      "evidence_status": "documented",
+      "status_rationale": "The names are those of real and prominent figures in mid-century American science, military and intelligence, and their genuine positions are a matter of public record. This is exactly what a competent forgery would use, and it is not evidence for the committee.",
+      "confidence_note": "Included because it is the strongest point made in the documents' favour and is true — while establishing nothing about the committee's existence."
+    }
+  ],
+  "quiz_questions": [
+    {
+      "format": "single_choice",
+      "prompt": "How did the Majestic 12 documents first reach the public?",
+      "options": [
+        { "label": "They were released under the Freedom of Information Act", "is_correct": false },
+        { "label": "As anonymous undeveloped film sent to a television producer in 1984", "is_correct": true },
+        { "label": "They were found in the Truman Presidential Library", "is_correct": false },
+        { "label": "A former committee member disclosed them before his death", "is_correct": false }
+      ],
+      "explanation": "A roll of film with no return address arrived at Jaime Shandera's address in December 1984. No original paper document has ever been produced.",
+      "source_id": "src-fbi-mj12",
+      "difficulty": 7
+    },
+    {
+      "format": "single_choice",
+      "prompt": "What is the strongest single indicator that the MJ-12 documents were fabricated?",
+      "options": [
+        { "label": "The named individuals never existed", "is_correct": false },
+        { "label": "Truman's signature matches one on an unrelated genuine letter closely enough to indicate copying", "is_correct": true },
+        { "label": "The paper was chemically dated to the 1980s", "is_correct": false },
+        { "label": "The author later confessed", "is_correct": false }
+      ],
+      "explanation": "The signature corresponds in fine detail to Truman's signature on a real letter of 1 October 1947 to Vannevar Bush — a correspondence no two independent signings produce.",
+      "source_id": "src-truman-bush-1947",
+      "difficulty": 9
+    },
+    {
+      "format": "documented_or_debunked",
+      "prompt": "The Majestic 12 briefing document is an authenticated US government record.",
+      "options": [{ "label": "DOCUMENTED", "is_correct": false }, { "label": "DEBUNKED", "is_correct": true }],
+      "explanation": "The FBI concluded the documents were fabricated. No original, no provenance and no corroborating record exists.",
+      "source_id": "src-fbi-mj12",
+      "difficulty": 5
+    }
+  ]
+}

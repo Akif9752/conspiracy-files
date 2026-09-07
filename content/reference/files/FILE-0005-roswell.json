@@ -1,0 +1,104 @@
+{
+  "file_number": 5,
+  "slug": "roswell",
+  "title": "ROSWELL",
+  "subtitle": "What the Army recovered in July 1947, and what it said it recovered",
+  "tier": "a_full",
+  "editorial_state": "in_review",
+  "summary": "On 8 July 1947 the Roswell Army Air Field issued a press release stating it had recovered a 'flying disc'. Within hours the story was replaced with a weather balloon. Both statements were false: the debris came from a classified programme designed to detect Soviet nuclear tests, and the Air Force did not say so for 47 years.",
+  "origin_note": "New Mexico, July 1947, three weeks after Kenneth Arnold's sighting near Mount Rainier had introduced the phrase 'flying saucer' to the American press and set off a wave of reports.",
+  "story": "A rancher, W. W. Brazel, found debris on grazing land north of Roswell and reported it. The base public information officer issued a release announcing the recovery of a flying disc; it ran on the front page of the Roswell Daily Record the same day. Hours later the commanding general of the Eighth Air Force presented the material as a weather balloon, and the story died for three decades. It returned in 1978, when the researcher Stanton Friedman interviewed Major Jesse Marcel, the intelligence officer who had handled the debris, and grew through the 1980s into a detailed account involving recovered bodies. In 1994 the Air Force published a report identifying the debris as material from Project Mogul — a classified array of high-altitude balloons carrying acoustic sensors intended to detect Soviet atomic tests at long range. A 1995 General Accounting Office review of surviving records followed, and a second Air Force report in 1997 addressed the reports of bodies, proposing that they derived from later high-altitude parachute tests using anthropomorphic dummies. That second explanation is the weaker of the two: the dummy drops took place between 1953 and 1959, and the report's account of how witnesses came to compress six years of events into one has been widely criticised.",
+  "assessment": "Roswell is the archive's clearest example of a real cover-up attached to an unsupported explanation. The government did give a false public account, twice, and did conceal the true source of the debris for decades — because the true source was a classified programme aimed at the Soviet Union. That concealment is documented. It is also the entire documented content of the story. The extraterrestrial account rests on witness recollections gathered thirty years after the event, in a period when the Roswell story was already well known, and on documents that have not survived scrutiny.",
+  "current_status_note": "The Mogul identification is accepted as the best-supported explanation for the debris. The 1997 explanation of the body reports remains contested on its own timeline. The case is a standard example in the literature on how secrecy generates the very speculation it is meant to prevent.",
+  "origin_year": 1947,
+  "period_start": 1947,
+  "period_end": 1997,
+  "region_code": "US",
+  "obscurity_score": 2,
+  "harm_tier": 0,
+  "categories": ["THE SKY", "INTELLIGENCE"],
+  "tags": ["ufo", "1940s", "new-mexico", "cold-war", "declassified", "us-air-force", "project-mogul"],
+  "entities": [
+    { "name": "Roswell Army Air Field", "kind": "organization", "role": "documented_actor" },
+    { "name": "Jesse Marcel", "kind": "person", "role": "documented_actor" },
+    { "name": "Roger Ramey", "kind": "person", "role": "documented_actor" },
+    { "name": "W. W. Brazel", "kind": "person", "role": "documented_actor" },
+    { "name": "Stanton Friedman", "kind": "person", "role": "source_of_claim" },
+    { "name": "United States Air Force", "kind": "organization", "role": "investigator" }
+  ],
+  "claims": [
+    {
+      "ordinal": 1,
+      "is_core": true,
+      "statement": "The United States military recovered debris near Roswell in July 1947 and knowingly gave a false public account of its origin.",
+      "evidence_status": "documented",
+      "status_rationale": "The recovery, the two contradictory public statements and the eventual identification of the debris as material from a classified programme are all established by Air Force and General Accounting Office documents. The weather balloon statement was not true and the Air Force has confirmed it was not true.",
+      "evidence_items": [
+        { "stance": "supports", "source_id": "src-raaf-release-1947", "statement": "The base's own press release, reported on 8 July 1947, announced the recovery of a flying disc — a statement retracted within hours." },
+        { "stance": "supports", "source_id": "src-af-roswell-1994", "statement": "The Air Force identified the debris as originating from Project Mogul and stated that the weather balloon explanation given in 1947 was a cover for a classified programme." },
+        { "stance": "supports", "source_id": "src-gao-1995", "statement": "The GAO review of surviving records confirmed the absence of expected documentation and the classified status of the relevant programme." }
+      ]
+    },
+    {
+      "ordinal": 2,
+      "is_core": false,
+      "statement": "The debris recovered at Roswell was of extraterrestrial origin.",
+      "claimed_by": "Charles Berlitz and William Moore (1980) and subsequent authors",
+      "evidence_status": "unverified",
+      "status_rationale": "No physical material, contemporaneous document or record supports an extraterrestrial origin. The account rests on witness recollections first collected in 1978, more than thirty years after the event. A documented and materially consistent alternative explanation exists.",
+      "evidence_items": [
+        { "stance": "undermines", "source_id": "src-moore-mogul", "statement": "The Mogul balloon trains used neoprene balloons and radar reflectors built from foil, balsa and reinforcing tape — materials matching the descriptions given of the debris, including the unusual printed tape." },
+        { "stance": "undermines", "source_id": "src-af-roswell-1994", "statement": "The report reconstructs the Mogul flight programme operating from Alamogordo in June and July 1947 and identifies it as the source of the material." },
+        { "stance": "context", "source_id": "src-af-roswell-1994", "statement": "The specific candidate flight, Mogul Flight 4, is recorded as cancelled in the surviving NYU launch log. This is the principal documented weakness in the identification and is noted here rather than omitted." }
+      ]
+    },
+    {
+      "ordinal": 3,
+      "is_core": false,
+      "statement": "Alien bodies were recovered at the site and taken to a military facility.",
+      "evidence_status": "unverified",
+      "no_evidentiary_basis": true,
+      "status_rationale": "No contemporaneous record, physical evidence or first-hand documentation exists. The accounts first appear in the 1980s. The Air Force's proposed explanation — confusion with anthropomorphic test dummies used in high-altitude parachute trials — has its own timeline problem, since those trials ran from 1953 to 1959.",
+      "confidence_note": "Both the claim and the official counter-explanation are weakly supported. The honest position is that there is no evidence of recovered bodies and that the Air Force's account of where the reports came from is not persuasive either.",
+      "evidence_items": [
+        { "stance": "context", "source_id": "src-af-roswell-1997", "statement": "The report attributes body reports to anthropomorphic dummies dropped in high-altitude tests between 1953 and 1959, a period six to twelve years after the events described." }
+      ]
+    }
+  ],
+  "quiz_questions": [
+    {
+      "format": "single_choice",
+      "prompt": "What did the 1994 US Air Force report identify as the source of the Roswell debris?",
+      "options": [
+        { "label": "A weather balloon", "is_correct": false },
+        { "label": "Project Mogul, a classified balloon programme for detecting Soviet nuclear tests", "is_correct": true },
+        { "label": "A crashed experimental aircraft", "is_correct": false },
+        { "label": "The report reached no conclusion", "is_correct": false }
+      ],
+      "explanation": "The Air Force stated the 1947 weather balloon explanation had been a cover story for Project Mogul, which was classified at the time.",
+      "source_id": "src-af-roswell-1994",
+      "difficulty": 4
+    },
+    {
+      "format": "single_choice",
+      "prompt": "How long after the 1947 incident did the Roswell story re-enter public attention?",
+      "options": [
+        { "label": "About five years", "is_correct": false },
+        { "label": "About thirty years, following 1978 interviews with a former intelligence officer", "is_correct": true },
+        { "label": "It was continuously reported from 1947 onwards", "is_correct": false },
+        { "label": "Only after the 1994 Air Force report", "is_correct": false }
+      ],
+      "explanation": "The story lay dormant until Stanton Friedman's 1978 interviews with Major Jesse Marcel revived it.",
+      "source_id": "src-af-roswell-1994",
+      "difficulty": 6
+    },
+    {
+      "format": "documented_or_debunked",
+      "prompt": "The US military gave a false public explanation for what it recovered at Roswell.",
+      "options": [{ "label": "DOCUMENTED", "is_correct": true }, { "label": "DEBUNKED", "is_correct": false }],
+      "explanation": "Documented, and confirmed by the Air Force itself in 1994. The debris was not a weather balloon; the true source was classified.",
+      "source_id": "src-af-roswell-1994",
+      "difficulty": 3
+    }
+  ]
+}

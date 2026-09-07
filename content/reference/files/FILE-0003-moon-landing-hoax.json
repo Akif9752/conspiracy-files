@@ -1,0 +1,201 @@
+{
+  "file_number": 3,
+  "slug": "moon-landing-hoax",
+  "title": "THE MOON LANDING HOAX",
+  "subtitle": "The claim that Apollo was filmed on Earth",
+  "tier": "a_full",
+  "editorial_state": "in_review",
+  "summary": "Six Apollo missions returned 382 kilograms of lunar rock to Earth, left three laser retroreflectors that observatories still bounce light off today, and were tracked independently by observatories outside the United States, including in the Soviet Union — which had every reason to expose a fake and never did.",
+  "origin_note": "The claim was first set out at length in 1976 by Bill Kaysing, a former technical writer at the rocket engine manufacturer Rocketdyne, in a self-published book. It gained a mass audience through a 2001 Fox television special.",
+  "story": "Kaysing argued that the technology of the 1960s could not have delivered a crewed landing and that NASA staged the footage to win the space race. The argument was carried forward largely through photographic analysis: shadows that appear non-parallel, the absence of stars in the sky, a flag that appears to move, and the absence of a visible blast crater under the lunar module. Each of these has a specific technical explanation and none requires a staged set. The claim persisted less because of its evidence than because of its structure: it is a claim about images, and images are the only part of Apollo most people ever encounter directly. The physical evidence — the samples, the retroreflectors, the tracking records — is real but not visual, and so plays almost no part in the popular argument.",
+  "assessment": "The central claim is contradicted by multiple independent lines of physical evidence, at least one of which — the retroreflectors — anyone with access to a suitable observatory can verify today, and one of which comes from a hostile state with strong motive to expose a fraud. The individual photographic arguments each rest on an incorrect assumption about optics or about how objects behave in vacuum and low gravity. There is no version of this claim that survives contact with the sample collection.",
+  "current_status_note": "Rejected by the scientific community without qualification. Retained as a case study in how visual intuition fails in unfamiliar physical conditions.",
+  "origin_year": 1976,
+  "period_start": 1969,
+  "period_end": 1972,
+  "region_code": "US",
+  "obscurity_score": 2,
+  "harm_tier": 1,
+  "categories": [
+    "THE SKY",
+    "POWER"
+  ],
+  "tags": [
+    "nasa",
+    "apollo",
+    "1970s",
+    "space",
+    "photography",
+    "cold-war"
+  ],
+  "entities": [
+    {
+      "name": "NASA",
+      "kind": "organization",
+      "role": "target_of_claim"
+    },
+    {
+      "name": "Bill Kaysing",
+      "kind": "person",
+      "role": "source_of_claim"
+    },
+    {
+      "name": "Apollo programme",
+      "kind": "project",
+      "role": "documented_actor"
+    },
+    {
+      "name": "Jodrell Bank Observatory",
+      "kind": "place",
+      "role": "investigator"
+    }
+  ],
+  "claims": [
+    {
+      "ordinal": 1,
+      "is_core": true,
+      "statement": "The Apollo Moon landings were staged and filmed on Earth.",
+      "claimed_by": "Bill Kaysing (1976) and subsequent authors",
+      "evidence_status": "debunked",
+      "status_rationale": "Contradicted by four independent lines of physical evidence: returned lunar samples with properties no terrestrial or meteoritic material matches, functioning retroreflectors on the lunar surface, orbital photography of the landing sites at sufficient resolution to show hardware and footpaths, and independent tracking of the missions by non-US observatories including in the Soviet Union.",
+      "evidence_items": [
+        {
+          "stance": "undermines",
+          "source_id": "src-apollo-samples",
+          "statement": "382 kg of lunar material was returned across six missions and distributed to laboratories worldwide. The samples contain no hydrated minerals and show a cosmic-ray exposure history inconsistent with terrestrial origin; no process on Earth produces them and no meteorite collection could have supplied the quantity."
+        },
+        {
+          "stance": "undermines",
+          "source_id": "src-llr-retroreflectors",
+          "statement": "Retroreflector arrays placed by Apollo 11, 14 and 15 are still used for lunar laser ranging. Observatories fire lasers at them and time the return, a measurement that requires a human-placed instrument at a known point on the surface."
+        },
+        {
+          "stance": "undermines",
+          "source_id": "src-lro-2011",
+          "statement": "Lunar Reconnaissance Orbiter imagery from 2009 and, at higher resolution, 2011 shows the descent stages, deployed experiment packages and astronaut footpaths at the Apollo landing sites."
+        },
+        {
+          "stance": "context",
+          "source_id": "src-kaysing-1976",
+          "statement": "The originating text argues from an assessment of 1960s engineering capability and from photographic anomalies; it presents no physical evidence and does not address the returned samples."
+        }
+      ]
+    },
+    {
+      "ordinal": 2,
+      "is_core": false,
+      "statement": "No stars are visible in Apollo surface photographs, which proves they were shot on a set.",
+      "evidence_status": "debunked",
+      "status_rationale": "A camera exposed for a brightly sunlit surface cannot simultaneously record stars, which are orders of magnitude fainter. The same effect occurs in any daylight photograph taken on Earth. Their absence is what a genuine photograph would show.",
+      "evidence_items": [
+        {
+          "stance": "undermines",
+          "source_id": "src-lro-2011",
+          "statement": "The exposure settings required for a sunlit lunar surface place stars far below the film's threshold; photographs taken in shadow with longer exposures do record them."
+        }
+      ]
+    },
+    {
+      "ordinal": 3,
+      "is_core": false,
+      "statement": "The flag moves in the footage, which proves there was air.",
+      "evidence_status": "debunked",
+      "status_rationale": "The flag was fitted with a horizontal rod to hold it out in vacuum. Motion occurs while the astronauts handle the pole and persists longer than it would on Earth precisely because there is no air to damp the oscillation. The flag is stationary in every frame in which nobody is touching it.",
+      "evidence_items": [
+        {
+          "stance": "undermines",
+          "source_id": "src-apollo-samples",
+          "statement": "The absence of atmospheric damping means an oscillation started by handling the pole continues far longer than terrestrial intuition expects — the opposite of what the claim asserts."
+        }
+      ]
+    },
+    {
+      "ordinal": 4,
+      "is_core": false,
+      "statement": "Shadows in Apollo photographs run in different directions, proving multiple studio lights.",
+      "evidence_status": "debunked",
+      "status_rationale": "Non-parallel shadows on an uneven surface photographed with a wide-angle lens are expected from a single distant light source. Multiple point sources would also produce multiple shadows per object, which the photographs do not show.",
+      "evidence_items": [
+        {
+          "stance": "undermines",
+          "source_id": "src-lro-2011",
+          "statement": "Orbital imagery of the landing sites shows the same undulating terrain that produces divergent shadow directions in the surface photographs when a wide-angle lens is used. A single distant source over uneven ground is sufficient to explain every published example."
+        },
+        {
+          "stance": "undermines",
+          "source_id": "src-apollo-samples",
+          "statement": "Multiple point light sources would cast multiple shadows from each object. No Apollo surface photograph shows an object with more than one shadow."
+        }
+      ]
+    }
+  ],
+  "quiz_questions": [
+    {
+      "format": "single_choice",
+      "prompt": "Which piece of Apollo hardware can still be used from Earth today to verify the landings?",
+      "options": [
+        {
+          "label": "The lunar rovers' radio transmitters",
+          "is_correct": false
+        },
+        {
+          "label": "Laser retroreflectors left on the surface",
+          "is_correct": true
+        },
+        {
+          "label": "The descent stage fuel tanks",
+          "is_correct": false
+        },
+        {
+          "label": "The flags",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Retroreflectors placed by Apollo 11, 14 and 15 are still targeted by observatories performing lunar laser ranging.",
+      "source_id": "src-llr-retroreflectors",
+      "difficulty": 4
+    },
+    {
+      "format": "single_choice",
+      "prompt": "Why are no stars visible in photographs taken on the lunar surface?",
+      "options": [
+        {
+          "label": "There is no atmosphere to scatter their light into the camera",
+          "is_correct": false
+        },
+        {
+          "label": "The exposure needed for a sunlit surface is far too short to record them",
+          "is_correct": true
+        },
+        {
+          "label": "NASA edited them out of the released images",
+          "is_correct": false
+        },
+        {
+          "label": "The camera lenses were fitted with filters that blocked them",
+          "is_correct": false
+        }
+      ],
+      "explanation": "The same effect occurs on Earth: a photograph exposed for bright daylight will not record stars.",
+      "source_id": "src-lro-2011",
+      "difficulty": 3
+    },
+    {
+      "format": "documented_or_debunked",
+      "prompt": "The Soviet Union independently tracked the Apollo missions and never disputed that they reached the Moon.",
+      "options": [
+        {
+          "label": "DOCUMENTED",
+          "is_correct": true
+        },
+        {
+          "label": "DEBUNKED",
+          "is_correct": false
+        }
+      ],
+      "explanation": "The Soviet Union had both the capability to track the missions and the strongest possible motive to expose a fake. It did neither.",
+      "source_id": "src-llr-retroreflectors",
+      "difficulty": 5
+    }
+  ]
+}

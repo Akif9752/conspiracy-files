@@ -1,0 +1,107 @@
+{
+  "file_number": 1,
+  "slug": "mkultra",
+  "title": "MKULTRA",
+  "subtitle": "The CIA's twenty-year program of human experimentation",
+  "tier": "a_full",
+  "editorial_state": "in_review",
+  "summary": "Between 1953 and 1973 the CIA funded experiments at more than 80 institutions — universities, hospitals, prisons and pharmaceutical companies — testing drugs, hypnosis and sensory deprivation on human subjects, some of whom were never told. In 1973 the Director of Central Intelligence ordered the files destroyed.",
+  "origin_note": "Authorised on 13 April 1953 by Director of Central Intelligence Allen Dulles, in a Cold War climate of fear that Soviet, Chinese and North Korean services had developed reliable methods of interrogation and behavioural control.",
+  "story": "MKULTRA absorbed and extended earlier CIA efforts (BLUEBIRD, 1950; ARTICHOKE, 1951) and eventually comprised 149 subprojects. Funding was routed through front foundations so that most participating researchers did not know the source of their money. One subproject, Operation Midnight Climax, ran CIA safehouses in San Francisco and New York where unwitting members of the public were dosed with LSD and observed. In January 1973, as the Watergate investigations gathered pace, Director Richard Helms ordered MKULTRA records destroyed. The programme became public through the 1975 Rockefeller Commission and Church Committee investigations. In 1977 roughly 16,000 pages of financial records that had escaped destruction were located in a records depository in response to a Freedom of Information Act request by the journalist John Marks, prompting a fresh Senate hearing on 3 August 1977.",
+  "assessment": "MKULTRA is one of the small number of entries in this archive where the central claim is not in dispute. The programme's existence, scope, funding structure, use of unwitting subjects and deliberate record destruction are all established by the government's own investigations and by surviving documents. What remains unsupported is the stronger folk version of the story: that the programme succeeded. The surviving record — including the CIA's own 1963 Inspector General review — describes a long, expensive and largely unproductive line of research, not a working technique for controlling behaviour.",
+  "current_status_note": "Treated by historians as documented fact and as one of the principal cases in the modern history of research ethics. The destroyed records mean the full extent of the programme cannot be reconstructed, and that gap is itself a documented fact rather than a matter of speculation.",
+  "origin_year": 1953,
+  "period_start": 1953,
+  "period_end": 1973,
+  "region_code": "US",
+  "obscurity_score": 3,
+  "harm_tier": 1,
+  "categories": ["INTELLIGENCE", "BODY & MIND"],
+  "tags": ["cia", "cold-war", "1950s", "1960s", "declassified", "human-experimentation", "church-committee", "lsd"],
+  "entities": [
+    { "name": "Central Intelligence Agency", "kind": "organization", "role": "documented_actor" },
+    { "name": "Allen Dulles", "kind": "person", "role": "documented_actor" },
+    { "name": "Richard Helms", "kind": "person", "role": "documented_actor" },
+    { "name": "Sidney Gottlieb", "kind": "person", "role": "documented_actor" },
+    { "name": "Frank Olson", "kind": "person", "role": "target_of_claim" },
+    { "name": "Church Committee", "kind": "organization", "role": "investigator" }
+  ],
+  "claims": [
+    {
+      "ordinal": 1,
+      "is_core": true,
+      "statement": "The CIA ran a covert programme of human experimentation with drugs, hypnosis and other techniques, including on subjects who had not consented and did not know they were being tested.",
+      "claimed_by": "Established by US Senate and presidential commission investigations",
+      "evidence_status": "documented",
+      "status_rationale": "Confirmed by two independent federal investigations in 1975, by a dedicated Senate hearing in 1977, and by roughly 16,000 pages of surviving programme financial records. The CIA did not dispute the findings.",
+      "evidence_items": [
+        { "stance": "supports", "source_id": "src-church-book1", "statement": "The Church Committee documented MKULTRA's authorisation, its 149 subprojects and its use of unwitting subjects, and reported that the programme's records had been destroyed in 1973 on the Director's order." },
+        { "stance": "supports", "source_id": "src-mkultra-hearing-1977", "statement": "The 1977 joint Senate hearing was convened specifically because surviving financial records contradicted earlier CIA testimony that all MKULTRA material had been destroyed." },
+        { "stance": "supports", "source_id": "src-rockefeller-1975", "statement": "The Rockefeller Commission independently described CIA drug testing on unwitting subjects, including the case of Frank Olson, an Army scientist who was dosed with LSD without his knowledge in November 1953 and died days later in a fall from a New York hotel window." },
+        { "stance": "context", "source_id": "src-marks-1979", "statement": "Marks reconstructed the programme's institutional reach from the surviving financial records, identifying more than 80 institutions that received MKULTRA funding, most through intermediary foundations that concealed the source." }
+      ]
+    },
+    {
+      "ordinal": 2,
+      "is_core": false,
+      "statement": "The CIA deliberately destroyed the MKULTRA records to prevent scrutiny.",
+      "evidence_status": "documented",
+      "status_rationale": "The destruction order is documented and was acknowledged in sworn testimony; the timing, in January 1973 as congressional scrutiny of the intelligence agencies intensified, is a matter of record.",
+      "evidence_items": [
+        { "stance": "supports", "source_id": "src-church-book1", "statement": "The Committee established that Director Richard Helms ordered the destruction of MKULTRA files in 1973 and that the bulk of the programme's substantive records were destroyed." }
+      ]
+    },
+    {
+      "ordinal": 3,
+      "is_core": false,
+      "statement": "MKULTRA succeeded in producing a reliably controllable subject — a 'Manchurian Candidate' who could be directed to act without knowledge or memory.",
+      "claimed_by": "Popular accounts and later conspiracy literature",
+      "evidence_status": "unverified",
+      "status_rationale": "Nothing in the surviving record indicates such a capability was achieved. The CIA's own internal review characterised the research as unproductive. Because the substantive files were destroyed, absence of evidence here is weaker than it would otherwise be — which is why this claim is unverified rather than debunked.",
+      "confidence_note": "This is a case where the destroyed records genuinely limit what can be concluded. The honest position is that no evidence of success exists, not that success has been ruled out.",
+      "evidence_items": [
+        { "stance": "undermines", "source_id": "src-church-book1", "statement": "The Committee's review of surviving material found a long programme of scattered, largely inconclusive research, with no indication that a reliable behavioural control technique was developed." },
+        { "stance": "context", "source_id": "src-marks-1979", "statement": "Marks concluded from the financial records that the programme's practical results were meagre relative to its cost and duration." }
+      ]
+    },
+    {
+      "ordinal": 4,
+      "is_core": false,
+      "statement": "MKULTRA continues today under a different name.",
+      "evidence_status": "unverified",
+      "no_evidentiary_basis": true,
+      "status_rationale": "No document, testimony, budget line or whistleblower account supports a continuation. The claim rests on the general observation that the original programme was secret, which is not evidence for a specific successor."
+    }
+  ],
+  "quiz_questions": [
+    {
+      "format": "single_choice",
+      "prompt": "Which agency ran the MKULTRA programme?",
+      "options": [{ "label": "FBI", "is_correct": false }, { "label": "CIA", "is_correct": true }, { "label": "NASA", "is_correct": false }, { "label": "NSA", "is_correct": false }],
+      "explanation": "MKULTRA was authorised by CIA Director Allen Dulles on 13 April 1953 and run by the Agency's Technical Services Staff.",
+      "source_id": "src-church-book1",
+      "difficulty": 2
+    },
+    {
+      "format": "single_choice",
+      "prompt": "Why do most MKULTRA records no longer exist?",
+      "options": [
+        { "label": "They were lost in a fire at a records depository", "is_correct": false },
+        { "label": "The CIA Director ordered them destroyed in 1973", "is_correct": true },
+        { "label": "They remain classified and have never been released", "is_correct": false },
+        { "label": "They were never written down in the first place", "is_correct": false }
+      ],
+      "explanation": "Director Richard Helms ordered the files destroyed in January 1973. About 16,000 pages of financial records survived in a separate depository and surfaced in 1977.",
+      "source_id": "src-church-book1",
+      "difficulty": 4
+    },
+    {
+      "format": "documented_or_debunked",
+      "prompt": "The CIA gave LSD to members of the public who did not know they were being tested.",
+      "options": [{ "label": "DOCUMENTED", "is_correct": true }, { "label": "DEBUNKED", "is_correct": false }],
+      "explanation": "Operation Midnight Climax ran CIA safehouses where unwitting subjects were dosed with LSD and observed. Documented by the Rockefeller Commission and the Church Committee.",
+      "source_id": "src-rockefeller-1975",
+      "difficulty": 3
+    }
+  ]
+}

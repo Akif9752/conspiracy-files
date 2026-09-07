@@ -1,0 +1,115 @@
+{
+  "file_number": 4,
+  "slug": "jfk-assassination",
+  "title": "THE KENNEDY ASSASSINATION",
+  "subtitle": "Two federal investigations, two different conclusions",
+  "tier": "a_full",
+  "editorial_state": "in_review",
+  "summary": "Two official United States investigations into the same killing reached different conclusions. The Warren Commission found in 1964 that Lee Harvey Oswald acted alone. The House Select Committee on Assassinations found in 1979 that Kennedy was probably assassinated as the result of a conspiracy — a finding whose scientific basis was rejected three years later by a National Research Council panel.",
+  "origin_note": "President John F. Kennedy was shot in Dealey Plaza, Dallas, on 22 November 1963. Oswald was arrested the same day and killed two days later by Jack Ruby while in police custody, before any trial could take place.",
+  "story": "The Warren Commission reported in September 1964 that three shots were fired from the Texas School Book Depository and that Oswald acted alone. Public confidence in that conclusion declined through the 1960s and 1970s. In 1976 the House established a Select Committee on Assassinations, which reviewed the medical and ballistic evidence and endorsed the finding that Oswald fired at the motorcade — but also examined a Dallas police dictabelt recording and concluded, on acoustic grounds, that a fourth shot had probably been fired from the grassy knoll. On that basis the Committee reported in 1979 that Kennedy was 'probably assassinated as a result of a conspiracy', while stating it could not identify the other gunman or any conspirators. In 1982 a National Research Council panel chaired by the physicist Norman Ramsey examined the same recording and concluded the impulses were not gunshots and had been recorded about a minute after the shooting — a finding that rested in part on an amateur researcher's identification of cross-talk on the tape referring to events that had already occurred. The acoustic basis of the Committee's conspiracy finding did not survive. The finding itself was never formally withdrawn.",
+  "assessment": "This file is classified CONTESTED for a specific and narrow reason: the official record of the United States contains two contradictory conclusions, and the later one has never been retracted by the body that issued it. That is not the same as evidentiary parity. On the forensic questions — where the shots came from and who fired them — the two investigations agree, and the physical evidence is not seriously disputed. On the conspiracy question, the House Committee's own stated basis was subsequently rejected by an independent scientific panel, and in the four decades since, no conspirator, no second weapon and no corroborating document has been identified despite one of the largest declassification programmes in US history. A reader should take from this file that the institutional record is genuinely unresolved and that the evidentiary record is not.",
+  "current_status_note": "The 1992 JFK Records Act and the Assassination Records Review Board released several million pages. That process documented real withholding of records by federal agencies — a fact that explains public distrust without supplying evidence for any particular alternative account.",
+  "origin_year": 1963,
+  "period_start": 1963,
+  "period_end": 1979,
+  "region_code": "US",
+  "obscurity_score": 1,
+  "harm_tier": 1,
+  "categories": ["POWER", "INTELLIGENCE"],
+  "tags": ["jfk", "1960s", "assassination", "warren-commission", "hsca", "cia", "declassified", "dallas"],
+  "entities": [
+    { "name": "John F. Kennedy", "kind": "person", "role": "documented_actor" },
+    { "name": "Lee Harvey Oswald", "kind": "person", "role": "documented_actor" },
+    { "name": "Warren Commission", "kind": "organization", "role": "investigator" },
+    { "name": "House Select Committee on Assassinations", "kind": "organization", "role": "investigator" },
+    { "name": "Central Intelligence Agency", "kind": "organization", "role": "alleged_actor" },
+    { "name": "Norman F. Ramsey", "kind": "person", "role": "investigator" }
+  ],
+  "claims": [
+    {
+      "ordinal": 1,
+      "is_core": true,
+      "statement": "President Kennedy was assassinated as the result of a conspiracy rather than by a lone gunman.",
+      "claimed_by": "Concluded by the House Select Committee on Assassinations, 1979; contested by the Warren Commission, 1964",
+      "evidence_status": "contested",
+      "status_rationale": "Two federal investigations reached opposite conclusions and the later finding has never been formally withdrawn. This status records an unresolved contradiction in the official record. It does not indicate that the evidence is evenly balanced: the acoustic analysis on which the 1979 conspiracy finding rested was rejected by a National Research Council panel in 1982, and no conspirator has been identified in the six decades since.",
+      "confidence_note": "This is the hardest status assignment in the reference set. CONTESTED is used here because the institutional record is genuinely in conflict, not because the evidence for a conspiracy is strong. Readers should not read this badge as a fifty-fifty proposition.",
+      "evidence_items": [
+        { "stance": "supports", "source_id": "src-hsca-1979", "statement": "The Committee concluded that acoustic evidence established a high probability that two gunmen fired, and that Kennedy was probably assassinated as the result of a conspiracy. It stated it was unable to identify the other gunman or the extent of the conspiracy." },
+        { "stance": "undermines", "source_id": "src-warren-1964", "statement": "The Warren Commission concluded that Oswald fired all the shots and acted alone, finding no evidence of a conspiracy either domestic or foreign." },
+        { "stance": "undermines", "source_id": "src-nrc-ballistic-1982", "statement": "The National Research Council panel found that the impulse patterns on the dictabelt were not gunshots from Dealey Plaza and were recorded approximately one minute after the assassination, removing the scientific basis of the Committee's conspiracy finding." },
+        { "stance": "context", "source_id": "src-arrb-1998", "statement": "The Review Board's work released several million pages of records and documented that agencies had withheld material relevant to the investigations, without producing evidence identifying any conspirator." }
+      ]
+    },
+    {
+      "ordinal": 2,
+      "is_core": false,
+      "statement": "Lee Harvey Oswald fired shots at the presidential motorcade from the Texas School Book Depository.",
+      "evidence_status": "documented",
+      "status_rationale": "Both federal investigations concluded this independently, on ballistic, medical and eyewitness evidence. It is the one substantive point on which the Warren Commission and the House Select Committee agree.",
+      "evidence_items": [
+        { "stance": "supports", "source_id": "src-warren-1964", "statement": "The Commission concluded that shots were fired from the sixth-floor window of the Depository and that Oswald fired them." },
+        { "stance": "supports", "source_id": "src-hsca-1979", "statement": "The Committee independently reviewed the medical and ballistic evidence and concurred that Oswald fired three shots, two of which struck the President." }
+      ]
+    },
+    {
+      "ordinal": 3,
+      "is_core": false,
+      "statement": "Acoustic evidence from a Dallas police recording establishes that a second gunman fired from the grassy knoll.",
+      "evidence_status": "debunked",
+      "status_rationale": "Directly examined and rejected by a National Research Council panel, which identified cross-talk on the recording placing the impulses about a minute after the shooting. This is a rare case of a specific evidentiary claim being tested and failing.",
+      "evidence_items": [
+        { "stance": "undermines", "source_id": "src-nrc-ballistic-1982", "statement": "The panel concluded the impulses were not gunfire from Dealey Plaza and could not have been recorded at the time of the assassination." },
+        { "stance": "supports", "source_id": "src-hsca-1979", "statement": "The Committee's acoustic consultants had concluded the opposite in 1979; their analysis is the finding the panel reviewed." }
+      ]
+    },
+    {
+      "ordinal": 4,
+      "is_core": false,
+      "statement": "Federal agencies withheld records relevant to the investigation of the assassination.",
+      "evidence_status": "documented",
+      "status_rationale": "Documented by the Assassination Records Review Board, which was created specifically because the record was known to be incomplete and which reported on agency resistance to disclosure.",
+      "confidence_note": "Withholding is documented. What was withheld and why is a separate question, and the Board did not conclude that withholding indicated involvement in the assassination.",
+      "evidence_items": [
+        { "stance": "supports", "source_id": "src-arrb-1998", "statement": "The Board documented the incompleteness of the record available to earlier investigations and the difficulty it encountered in obtaining full compliance from agencies." }
+      ]
+    }
+  ],
+  "quiz_questions": [
+    {
+      "format": "single_choice",
+      "prompt": "What did the House Select Committee on Assassinations conclude in 1979?",
+      "options": [
+        { "label": "That Oswald acted alone, confirming the Warren Commission", "is_correct": false },
+        { "label": "That Kennedy was probably assassinated as the result of a conspiracy", "is_correct": true },
+        { "label": "That the CIA organised the assassination", "is_correct": false },
+        { "label": "That no conclusion could be reached on any question", "is_correct": false }
+      ],
+      "explanation": "The Committee reported a probable conspiracy on acoustic grounds, while stating it could not identify the other gunman or the conspirators.",
+      "source_id": "src-hsca-1979",
+      "difficulty": 5
+    },
+    {
+      "format": "single_choice",
+      "prompt": "What happened to the acoustic evidence behind the 1979 conspiracy finding?",
+      "options": [
+        { "label": "It was confirmed by later analysis", "is_correct": false },
+        { "label": "A National Research Council panel found the impulses were recorded about a minute after the shooting", "is_correct": true },
+        { "label": "The original recording was destroyed before it could be examined", "is_correct": false },
+        { "label": "It has never been independently reviewed", "is_correct": false }
+      ],
+      "explanation": "The 1982 panel chaired by Norman Ramsey concluded the impulses were not gunshots from Dealey Plaza, removing the basis of the finding.",
+      "source_id": "src-nrc-ballistic-1982",
+      "difficulty": 8
+    },
+    {
+      "format": "documented_or_debunked",
+      "prompt": "Both federal investigations agreed that Oswald fired shots from the Texas School Book Depository.",
+      "options": [{ "label": "DOCUMENTED", "is_correct": true }, { "label": "DEBUNKED", "is_correct": false }],
+      "explanation": "The Warren Commission and the House Select Committee disagreed about whether there was a conspiracy, but agreed that Oswald fired from the Depository.",
+      "source_id": "src-hsca-1979",
+      "difficulty": 4
+    }
+  ]
+}

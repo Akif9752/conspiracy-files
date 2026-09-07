@@ -1,0 +1,94 @@
+{
+  "file_number": 8,
+  "slug": "project-blue-beam",
+  "title": "PROJECT BLUE BEAM",
+  "subtitle": "A four-step plan with no documents, no sources and no physics",
+  "tier": "a_full",
+  "editorial_state": "in_review",
+  "summary": "In 1994 a Quebec writer described a NASA plan to project images of gods into the sky, broadcast voices directly into people's heads and stage a false Second Coming in order to install a world government. Thirty years on, no document, no budget line and no participant has ever been produced — and the central technology does not work the way the claim requires.",
+  "origin_note": "Set out by Serge Monast, a Québécois journalist and conspiracy writer, in a 1994 text and accompanying lectures. Monast died of a heart attack in December 1996, a fact frequently offered by supporters as corroboration.",
+  "story": "Monast's account has four stages: the staging of false archaeological discoveries to undermine established religions; a worldwide 'space show' of holographic projections of deities; two-way electronic telepathy delivered by extremely low frequency transmission; and a final phase of staged supernatural events, including a faked alien landing or rapture, to complete the transfer of authority to a single world government. The framework was assembled from existing material rather than research: it borrows the New World Order structure common in early-1990s conspiracy publishing, adds the era's anxieties about satellite broadcasting and mind-influencing technology, and attaches NASA as the actor. It found its real audience twenty years after publication, on video platforms, where each new large-scale technological demonstration — a drone light show, a projection-mapped building, a satellite constellation — is offered as evidence that the plan is being prepared.",
+  "assessment": "This claim is not merely unsupported; it has no evidentiary basis at all. There is no document, no leak, no procurement record, no former participant. The specific technical claim is also not achievable as described: a hologram requires light to be scattered by a medium, and the open sky provides none — this is why images cannot be projected onto clear air, then or now. The claim has an unusual property that makes it a useful teaching case: because it forecasts a specific future event, it is one of the few entries in this archive that has been repeatedly falsified by the simple passage of time.",
+  "current_status_note": "No supporting evidence has emerged in three decades. The claim persists mainly as an interpretive frame applied retrospectively to unrelated technology demonstrations.",
+  "origin_year": 1994,
+  "period_start": 1994,
+  "period_end": null,
+  "region_code": "CA",
+  "obscurity_score": 7,
+  "harm_tier": 1,
+  "categories": ["THE SKY", "BELIEF", "THE NETWORK"],
+  "tags": ["nasa", "1990s", "new-world-order", "holograms", "quebec", "no-evidentiary-basis", "religion"],
+  "entities": [
+    { "name": "Serge Monast", "kind": "person", "role": "source_of_claim" },
+    { "name": "NASA", "kind": "organization", "role": "target_of_claim" }
+  ],
+  "claims": [
+    {
+      "ordinal": 1,
+      "is_core": true,
+      "statement": "NASA is preparing to stage a global religious deception using holographic projection in order to install a single world government.",
+      "claimed_by": "Serge Monast (1994)",
+      "evidence_status": "unverified",
+      "no_evidentiary_basis": true,
+      "status_rationale": "No document, budget record, procurement trail, participant account or physical evidence has ever been offered in support. The originating text cites no sources. Thirty years of predicted events have not occurred. This is classified unverified rather than debunked because a negative of this breadth cannot be formally proved — but it should be read as the weakest status in the archive, not as an open question.",
+      "confidence_note": "The distinction between 'unverified' and 'no evidentiary basis' matters here. Some unverified claims rest on evidence that is inconclusive. This one rests on no evidence of any kind.",
+      "evidence_items": [
+        { "stance": "context", "source_id": "src-monast-1994", "statement": "The originating text sets out the four-stage plan without citation, documentary reference or named source, and attributes it to NASA without evidence of any connection." }
+      ]
+    },
+    {
+      "ordinal": 2,
+      "is_core": false,
+      "statement": "Images of deities can be projected into the open sky as holograms visible across a continent.",
+      "evidence_status": "debunked",
+      "status_rationale": "A projected image requires a surface or a scattering medium. Clear air provides neither, which is why no sky projection technology exists at any scale. Holography additionally requires coherent light and a recording geometry that atmospheric projection does not provide. The effects commonly cited as evidence — drone swarms, projection mapping onto buildings, laser shows in fog — all depend on either a physical surface or suspended particles.",
+      "evidence_items": [
+        { "stance": "undermines", "source_id": "src-monast-1994", "statement": "The claim as stated requires an image to form in clear air. Every real-world display technology offered as evidence for it works by illuminating a surface or a particulate medium instead." }
+      ]
+    },
+    {
+      "ordinal": 3,
+      "is_core": false,
+      "statement": "Monast's death in 1996 was connected to his publication of the claim.",
+      "evidence_status": "unverified",
+      "no_evidentiary_basis": true,
+      "status_rationale": "Monast died of a heart attack. No evidence of any other cause has been presented. The inference relies on the coincidence of death and publication, which is not evidence."
+    }
+  ],
+  "quiz_questions": [
+    {
+      "format": "single_choice",
+      "prompt": "Who originated the Project Blue Beam claim?",
+      "options": [
+        { "label": "A former NASA contractor turned whistleblower", "is_correct": false },
+        { "label": "Serge Monast, a Quebec conspiracy writer, in 1994", "is_correct": true },
+        { "label": "An anonymous posting on early internet forums", "is_correct": false },
+        { "label": "A declassified NASA planning document", "is_correct": false }
+      ],
+      "explanation": "Monast set out the four-stage claim in a 1994 text and lectures. It cites no sources and no NASA connection has ever been shown.",
+      "source_id": "src-monast-1994",
+      "difficulty": 8
+    },
+    {
+      "format": "single_choice",
+      "prompt": "Why can images not be projected into clear sky as the claim describes?",
+      "options": [
+        { "label": "The required lasers would be prohibited by international treaty", "is_correct": false },
+        { "label": "A projected image needs a surface or particles to scatter the light, and clear air has neither", "is_correct": true },
+        { "label": "The curvature of the Earth prevents it", "is_correct": false },
+        { "label": "It is possible but has only been demonstrated at small scale", "is_correct": false }
+      ],
+      "explanation": "Every real display technology cited as evidence — drone swarms, projection mapping, laser shows in fog — works by illuminating a surface or a particulate medium.",
+      "source_id": "src-monast-1994",
+      "difficulty": 6
+    },
+    {
+      "format": "documented_or_debunked",
+      "prompt": "A NASA programme called Project Blue Beam appears in declassified government records.",
+      "options": [{ "label": "DOCUMENTED", "is_correct": false }, { "label": "DEBUNKED", "is_correct": true }],
+      "explanation": "No such programme appears in any record. The claim originates entirely with a single 1994 text that cites no sources.",
+      "source_id": "src-monast-1994",
+      "difficulty": 4
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "file_number": 6,
+  "slug": "project-mogul",
+  "title": "PROJECT MOGUL",
+  "subtitle": "The classified balloon programme that listened for Soviet bombs",
+  "tier": "b_file",
+  "editorial_state": "in_review",
+  "summary": "In 1947 the United States had no way of knowing when the Soviet Union tested its first atomic bomb. Project Mogul was the answer: trains of high-altitude balloons carrying acoustic sensors, launched from New Mexico, listening for the sound of a distant detonation trapped in a layer of the upper atmosphere.",
+  "origin_note": "Initiated in 1947 by the US Army Air Forces, with balloon development contracted to a group at New York University. Named and classified from the outset; its existence was not publicly acknowledged for decades.",
+  "story": "The programme rested on a piece of physics: a low-frequency sound channel in the upper atmosphere that can carry acoustic energy over very long distances. A microphone held steadily at the right altitude might therefore detect a nuclear detonation thousands of kilometres away. The balloon trains were long assemblies of neoprene balloons, radar reflectors and sensor packages, launched from Alamogordo Army Air Field. The radar targets were built from metallic foil laminated to balsa struts and reinforced with tape — including a batch of tape printed with a floral pattern, a detail that later became significant when witnesses described unfamiliar markings on the Roswell debris. Mogul was superseded by other detection methods and wound down by 1949. The Soviet test in August 1949 was ultimately detected by air sampling rather than by acoustics.",
+  "assessment": "Mogul is included in this archive not because anyone disputes it but because it is the documented object underneath a famous unsupported one. It is also a clean illustration of the pattern that produces many entries here: a genuine secret, kept for genuine reasons, generates a false public explanation, and the false explanation outlives the reason for the secrecy by decades.",
+  "current_status_note": "Declassified and documented. Identified by the Air Force in 1994 as the source of the 1947 Roswell debris.",
+  "origin_year": 1947,
+  "period_start": 1947,
+  "period_end": 1949,
+  "region_code": "US",
+  "obscurity_score": 7,
+  "harm_tier": 0,
+  "categories": ["INTELLIGENCE", "THE SKY"],
+  "tags": ["cold-war", "1940s", "new-mexico", "declassified", "nuclear-detection", "secret-project", "documented-basis"],
+  "entities": [
+    { "name": "United States Army Air Forces", "kind": "organization", "role": "documented_actor" },
+    { "name": "Charles B. Moore", "kind": "person", "role": "documented_actor" },
+    { "name": "New York University", "kind": "organization", "role": "documented_actor" },
+    { "name": "Alamogordo Army Air Field", "kind": "place", "role": "documented_actor" }
+  ],
+  "claims": [
+    {
+      "ordinal": 1,
+      "is_core": true,
+      "statement": "The United States operated a classified programme of high-altitude balloon trains carrying acoustic sensors to detect Soviet nuclear tests at long range.",
+      "evidence_status": "documented",
+      "status_rationale": "Established by declassified Air Force documentation, by the surviving NYU project records and by the accounts of participating engineers.",
+      "evidence_items": [
+        { "stance": "supports", "source_id": "src-af-roswell-1994", "statement": "The report describes Project Mogul's purpose, classification, launch operations at Alamogordo and the construction of the balloon trains." },
+        { "stance": "supports", "source_id": "src-moore-mogul", "statement": "Moore, a project engineer with the NYU balloon group, described the construction of the trains, including the foil-and-balsa radar targets and the printed reinforcing tape." },
+        { "stance": "context", "source_id": "src-gao-1995", "statement": "The GAO search for records concerning the 1947 events documented what had and had not survived in government files." }
+      ]
+    },
+    {
+      "ordinal": 2,
+      "is_core": false,
+      "statement": "Mogul Flight 4, launched on 4 June 1947, was the specific source of the Roswell debris.",
+      "evidence_status": "contested",
+      "status_rationale": "The material match is strong and the operational window is right, but the surviving NYU launch log records Flight 4 as cancelled. Researchers disagree on whether the log is incomplete or the identification is wrong. The programme-level identification does not depend on resolving this.",
+      "evidence_items": [
+        { "stance": "supports", "source_id": "src-af-roswell-1994", "statement": "The report identifies Flight 4 as the most likely candidate on the basis of launch timing, trajectory and material composition." },
+        { "stance": "undermines", "source_id": "src-af-roswell-1994", "statement": "The NYU log lists Flight 4 as cancelled, which critics of the identification cite as evidence that the specific flight attribution is unsupported." }
+      ]
+    }
+  ],
+  "quiz_questions": [
+    {
+      "format": "single_choice",
+      "prompt": "What was Project Mogul designed to detect?",
+      "options": [
+        { "label": "Incoming Soviet bomber formations", "is_correct": false },
+        { "label": "Soviet nuclear tests, by listening for them acoustically from high altitude", "is_correct": true },
+        { "label": "Unidentified aerial phenomena over the American Southwest", "is_correct": false },
+        { "label": "Weather patterns ahead of atomic testing at Alamogordo", "is_correct": false }
+      ],
+      "explanation": "Mogul used balloon-borne acoustic sensors positioned in an upper-atmosphere sound channel able to carry the noise of a distant detonation.",
+      "source_id": "src-af-roswell-1994",
+      "difficulty": 7
+    },
+    {
+      "format": "documented_or_debunked",
+      "prompt": "Project Mogul was a real, classified US programme whose existence was concealed for decades.",
+      "options": [{ "label": "DOCUMENTED", "is_correct": true }, { "label": "DEBUNKED", "is_correct": false }],
+      "explanation": "Mogul was genuine and classified. Its secrecy is the reason the 1947 Roswell debris was publicly misidentified as a weather balloon.",
+      "source_id": "src-af-roswell-1994",
+      "difficulty": 6
+    }
+  ]
+}

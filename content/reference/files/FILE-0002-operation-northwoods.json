@@ -1,0 +1,102 @@
+{
+  "file_number": 2,
+  "slug": "operation-northwoods",
+  "title": "OPERATION NORTHWOODS",
+  "subtitle": "The false-flag plan the Joint Chiefs actually signed",
+  "tier": "a_full",
+  "editorial_state": "in_review",
+  "summary": "On 13 March 1962 the Chairman of the US Joint Chiefs of Staff sent the Secretary of Defense a signed memorandum proposing that the United States stage attacks — including against its own citizens and aircraft — and blame them on Cuba in order to justify an invasion. The document is authentic, declassified, and was rejected.",
+  "origin_note": "Written in the aftermath of the failed Bay of Pigs invasion of April 1961, during a period in which the Kennedy administration was under military pressure to find a pretext for direct action against Cuba.",
+  "story": "The memorandum, titled 'Justification for US Military Intervention in Cuba', was signed by General Lyman L. Lemnitzer and forwarded to Secretary of Defense Robert McNamara. Its appendices proposed a menu of pretexts: staged attacks on the US base at Guantánamo, the sinking of a boatload of Cuban refugees, a manufactured 'Remember the Maine' incident, harassment of civil aircraft, and a scheme involving a remotely controlled drone aircraft substituted for a chartered civilian flight. The proposal was not adopted. Lemnitzer was not reappointed as Chairman later that year. The document remained classified for 35 years and was released in 1997 through the Assassination Records Review Board, which had been given a broad mandate to declassify Cold War records connected to the Kennedy period. It reached a general audience through James Bamford's Body of Secrets in 2001.",
+  "assessment": "Northwoods is the clearest documented case of a US body formally proposing deception against its own public as an instrument of policy — and it is equally clearly a case of that proposal being refused. Both halves matter. The document is routinely cited as proof that later events were staged; it is not that. It establishes that such a plan was once written and rejected, which is a claim about institutional history, not about any subsequent event.",
+  "current_status_note": "Authentic and publicly available. Widely cited in academic work on Cold War civil-military relations, and equally widely misused as a general-purpose warrant for unrelated false-flag claims.",
+  "origin_year": 1962,
+  "period_start": 1962,
+  "period_end": 1962,
+  "region_code": "US",
+  "obscurity_score": 5,
+  "harm_tier": 1,
+  "categories": ["INTELLIGENCE", "POWER"],
+  "tags": ["cold-war", "cuba", "1960s", "declassified", "false-flag", "joint-chiefs", "kennedy"],
+  "entities": [
+    { "name": "Joint Chiefs of Staff", "kind": "organization", "role": "documented_actor" },
+    { "name": "Lyman L. Lemnitzer", "kind": "person", "role": "documented_actor" },
+    { "name": "Robert McNamara", "kind": "person", "role": "documented_actor" },
+    { "name": "John F. Kennedy", "kind": "person", "role": "documented_actor" },
+    { "name": "Assassination Records Review Board", "kind": "organization", "role": "investigator" }
+  ],
+  "claims": [
+    {
+      "ordinal": 1,
+      "is_core": true,
+      "statement": "The United States government has drawn up plans to stage attacks on its own citizens and blame a foreign power.",
+      "claimed_by": "Widely circulated formulation, based on the Northwoods memorandum",
+      "evidence_status": "partly_documented",
+      "status_rationale": "The documented part: a signed Joint Chiefs of Staff memorandum proposing exactly this exists and is public. The undocumented part: the claim as usually stated implies such plans were policy or were executed. The memorandum was rejected by the Secretary of Defense and no evidence indicates any element of it was carried out.",
+      "confidence_note": "The gap between 'was proposed at the highest military level' and 'was government policy' is the entire substance of this file. Both are commonly compressed into one sentence, and the compression is where the claim stops being accurate.",
+      "evidence_items": [
+        { "stance": "supports", "source_id": "src-northwoods-memo", "statement": "The memorandum of 13 March 1962 sets out, in appendices, a series of pretext operations including staged attacks against US military and civilian targets to be attributed to Cuba.", "locator": "Appendix to Enclosure A" },
+        { "stance": "supports", "source_id": "src-arrb-1998", "statement": "The Review Board's declassification programme released the memorandum in 1997; its authenticity has not been contested by the Department of Defense." },
+        { "stance": "undermines", "source_id": "src-bamford-2001", "statement": "Bamford's account establishes that the proposal was rejected and that Lemnitzer was not reappointed as Chairman of the Joint Chiefs later in 1962." },
+        { "stance": "context", "source_id": "src-northwoods-memo", "statement": "The document is a proposal seeking approval, not an operational order. It carries no execution authority and no evidence of approval is attached to it." }
+      ]
+    },
+    {
+      "ordinal": 2,
+      "is_core": false,
+      "statement": "Operation Northwoods was carried out.",
+      "evidence_status": "debunked",
+      "status_rationale": "The proposal was rejected at the level it was sent to, and no operation corresponding to any Northwoods pretext occurred. No Cuban-attributed incident of the kind described took place in the period.",
+      "evidence_items": [
+        { "stance": "undermines", "source_id": "src-bamford-2001", "statement": "The plan was declined by Secretary of Defense McNamara and never advanced beyond proposal stage." }
+      ]
+    },
+    {
+      "ordinal": 3,
+      "is_core": false,
+      "statement": "Because Northwoods existed, later attacks attributed to foreign actors were also staged by the US government.",
+      "evidence_status": "unverified",
+      "no_evidentiary_basis": true,
+      "status_rationale": "This is an inference, not evidence. That an institution once considered a deception does not establish that it later executed a different one. Each subsequent claim requires its own evidence, and this reasoning supplies none.",
+      "evidence_items": [
+        { "stance": "context", "source_id": "src-northwoods-memo", "statement": "The memorandum concerns Cuba in 1962 exclusively and makes no reference to any later event." }
+      ]
+    }
+  ],
+  "quiz_questions": [
+    {
+      "format": "single_choice",
+      "prompt": "What happened to the Operation Northwoods proposal?",
+      "options": [
+        { "label": "It was approved and partially carried out", "is_correct": false },
+        { "label": "It was rejected and never executed", "is_correct": true },
+        { "label": "It was approved but cancelled mid-operation", "is_correct": false },
+        { "label": "It was never formally submitted", "is_correct": false }
+      ],
+      "explanation": "The memorandum was sent to Secretary of Defense Robert McNamara and declined. No element of it was carried out.",
+      "source_id": "src-bamford-2001",
+      "difficulty": 5
+    },
+    {
+      "format": "single_choice",
+      "prompt": "How did the Northwoods memorandum become public?",
+      "options": [
+        { "label": "It was leaked by a serving officer in 1962", "is_correct": false },
+        { "label": "It was declassified in 1997 through the Assassination Records Review Board", "is_correct": true },
+        { "label": "It was published by a Cuban intelligence defector", "is_correct": false },
+        { "label": "It has never been officially released", "is_correct": false }
+      ],
+      "explanation": "The Review Board, created under the 1992 JFK Records Act, declassified the memorandum in 1997 after 35 years.",
+      "source_id": "src-arrb-1998",
+      "difficulty": 7
+    },
+    {
+      "format": "documented_or_debunked",
+      "prompt": "The US Joint Chiefs of Staff once formally proposed staging attacks on Americans to justify a war with Cuba.",
+      "options": [{ "label": "DOCUMENTED", "is_correct": true }, { "label": "DEBUNKED", "is_correct": false }],
+      "explanation": "The proposal is documented and public. It was rejected — but the proposal itself is authentic.",
+      "source_id": "src-northwoods-memo",
+      "difficulty": 4
+    }
+  ]
+}

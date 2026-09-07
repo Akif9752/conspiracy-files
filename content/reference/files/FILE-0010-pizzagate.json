@@ -1,0 +1,150 @@
+{
+  "file_number": 10,
+  "slug": "pizzagate",
+  "title": "PIZZAGATE",
+  "subtitle": "How a reading of stolen emails put a man with a rifle in a restaurant",
+  "tier": "a_full",
+  "editorial_state": "draft",
+  "_publish_blocked": true,
+  "_publish_blocked_reason": "Fails gate G-LINK-MIN (fewer than 2 typed edges) and gate G-HARM-3 (legal review not recorded). A tier 3 file cannot be published without its historical-pattern neighbourhood — at minimum files on the Satanic ritual abuse panic and on the blood libel — because without them the reader meets the claim without the context that makes it legible. Blocked deliberately in this fixture; see docs/05-DRY-RUN.md finding F-2.",
+  "harm_tier": 3,
+  "harm_note": "Names a living private individual as the target of a debunked accusation. Resulted in an armed attack. Legal review required. No share card. Not eligible as daily file. Not eligible as a rabbit hole terminal node.",
+  "requires_legal_ok": true,
+  "legal_ok_at": null,
+  "_structure_note": "HARM TIER 3 — inverted layout plus mandatory THE PATTERN and THE REAL COST sections. No THE ARGUMENTS section. The claim is summarised, never reconstructed.",
+  "summary": "In late 2016 readers of a set of stolen emails decided that ordinary words in them were code for child trafficking, and located the imagined operation in a Washington pizzeria. On 4 December a man drove there from North Carolina and fired a rifle inside the restaurant. Police found no evidence of any of it. The building has no basement.",
+  "context_and_consequences": "This file exists because the claim caused documented harm to identifiable people who had done nothing. A restaurant owner and his employees received sustained death threats. Neighbouring businesses on the same street were targeted. A man carrying an AR-15 walked into a restaurant open to the public and discharged it. He was sentenced to four years in federal prison. Nobody was hit, which was chance rather than design.",
+  "origin_note": "October and November 2016, following the publication by WikiLeaks of emails from the account of John Podesta, then chairman of Hillary Clinton's presidential campaign.",
+  "story": "The claim was assembled collaboratively on message boards and social platforms over several weeks. Its method was to treat ordinary vocabulary in the emails — words for food, for social arrangements — as a substitution cipher, and then to search publicly available material for anything that could be read as confirming the decoded meaning. The restaurant Comet Ping Pong appeared in the emails because its owner had hosted campaign-related events. From there the claim grew by accumulation: photographs from the restaurant's social media, its logo, its neighbours, its staff. No stage of the process involved evidence in any ordinary sense; it involved reinterpretation of material that was already public and innocuous. On 4 December 2016 Edgar Maddison Welch drove from Salisbury, North Carolina, entered the restaurant with a rifle and fired it. He later said he had come to investigate for himself and had found nothing.",
+  "why_it_spread": "Three things made this claim portable. First, the source material was genuine: the emails really were Podesta's, really were published, and could be read by anyone, which meant every participant could verify the raw material while verifying nothing about the interpretation laid over it. Second, the method was participatory. Decoding required no expertise and no access, only time and a willingness to treat coincidence as signal, and it rewarded contributors with the feeling of having found something themselves rather than been told it. Third, it arrived in the last weeks of a bitterly contested election, when a large audience was already primed to believe the worst of the people named. None of these is a fact about child trafficking. All of them are facts about how a group of people can talk themselves into certainty without ever encountering evidence.",
+  "the_pattern": "The structure of this claim is old. A secret group of powerful people, ritually harming children, hidden in plain sight, detectable only by those who know how to read the signs — this is the shape of the blood libel, the accusation levelled against Jewish communities in Europe from the twelfth century onward and used to justify expulsions and massacres for eight hundred years. It reappeared in the United States in the 1980s and 1990s as the Satanic ritual abuse panic, which produced criminal prosecutions and no corroborated cases; an FBI analysis published in 1992 found no substantiation for organised satanic ritual abuse despite extensive investigation. Pizzagate is that structure again, with a search engine in place of a pamphlet. Recognising the pattern is not a rhetorical move against the claim. It is the single most useful thing a reader can know about it, because the pattern predicts the claim's features — the coded language, the unfalsifiable reading, the identifiable local target — before you examine any of them.",
+  "the_real_cost": "Edgar Maddison Welch was sentenced on 22 June 2017 to four years in federal prison. The owner of Comet Ping Pong and his employees received continuing threats of violence. Other businesses on Connecticut Avenue were harassed for their proximity. The claim did not stop when it was refuted; it was absorbed into the larger QAnon narrative from late 2017 onward, where the same structure was applied to a wider set of targets.",
+  "assessment": "There was no evidence at the outset, none was produced afterwards, and the physical premise was false in a way anyone could check. What makes this file necessary is not the claim's content but its mechanism: it shows what happens when a group treats reinterpretation as investigation, and it shows that the cost of that mistake is paid by named private individuals rather than by the powerful figures the claim purports to expose.",
+  "current_status_note": "Refuted; no investigation has found any supporting evidence. Its structure was carried forward into subsequent conspiracy movements.",
+  "origin_year": 2016,
+  "period_start": 2016,
+  "period_end": 2017,
+  "region_code": "US",
+  "obscurity_score": 3,
+  "categories": [
+    "THE NETWORK",
+    "POWER"
+  ],
+  "tags": [
+    "2016",
+    "internet",
+    "harassment",
+    "blood-libel-derivative",
+    "harm-tier-3",
+    "armed-incident",
+    "election"
+  ],
+  "entities": [
+    {
+      "name": "James Alefantis",
+      "kind": "person",
+      "role": "target_of_claim",
+      "is_living_private_person": true
+    },
+    {
+      "name": "Comet Ping Pong",
+      "kind": "place",
+      "role": "target_of_claim"
+    },
+    {
+      "name": "Edgar Maddison Welch",
+      "kind": "person",
+      "role": "documented_actor"
+    },
+    {
+      "name": "John Podesta",
+      "kind": "person",
+      "role": "target_of_claim"
+    },
+    {
+      "name": "Metropolitan Police Department of the District of Columbia",
+      "kind": "organization",
+      "role": "investigator"
+    }
+  ],
+  "claims": [
+    {
+      "ordinal": 1,
+      "is_core": true,
+      "statement": "A child trafficking operation was run from a Washington DC restaurant by figures connected to a presidential campaign, indicated by coded language in published emails.",
+      "claimed_by": "Anonymous posters on message boards and social platforms, from October 2016",
+      "evidence_status": "debunked",
+      "status_rationale": "No evidence was presented at any stage beyond reinterpretation of innocuous public material. Police investigation found nothing. The physical premise — a basement in which the operation was said to be conducted — does not exist. The claim's only concrete outcome was an armed attack on the premises.",
+      "evidence_items": [
+        {
+          "stance": "undermines",
+          "source_id": "src-welch-sentencing-2017",
+          "statement": "Welch entered the restaurant armed on 4 December 2016, searched it, found no evidence of the claimed operation, and was subsequently convicted and sentenced to four years."
+        },
+        {
+          "stance": "context",
+          "source_id": "src-lanning-1992",
+          "statement": "The FBI's analysis of allegations of organised ritual child abuse found no corroborated cases despite extensive investigation — a precedent directly relevant to the structure of this claim."
+        }
+      ]
+    },
+    {
+      "ordinal": 2,
+      "is_core": false,
+      "statement": "The claim's structure reproduces the blood libel and the Satanic ritual abuse panic.",
+      "evidence_status": "documented",
+      "status_rationale": "The elements — a concealed elite, ritual harm to children, detection through coded signs — are the documented features of both earlier phenomena. The FBI's 1992 analysis documents the second; the historical record of the blood libel documents the first.",
+      "evidence_items": [
+        {
+          "stance": "supports",
+          "source_id": "src-lanning-1992",
+          "statement": "The report describes the recurring structure of ritual abuse allegations and the consistent absence of corroborating evidence across investigations."
+        }
+      ]
+    }
+  ],
+  "quiz_questions": [
+    {
+      "format": "single_choice",
+      "prompt": "What did the man who entered Comet Ping Pong with a rifle in December 2016 find?",
+      "options": [
+        {
+          "label": "Evidence that was later suppressed",
+          "is_correct": false
+        },
+        {
+          "label": "Nothing; he was convicted and sentenced to four years",
+          "is_correct": true
+        },
+        {
+          "label": "A concealed basement area",
+          "is_correct": false
+        },
+        {
+          "label": "He was prevented from entering",
+          "is_correct": false
+        }
+      ],
+      "explanation": "Edgar Maddison Welch searched the restaurant, found nothing, and was sentenced on 22 June 2017 to four years in federal prison. The building has no basement.",
+      "source_id": "src-welch-sentencing-2017",
+      "difficulty": 4
+    },
+    {
+      "format": "documented_or_debunked",
+      "prompt": "Investigators found no corroborated cases of organised satanic ritual abuse despite extensive investigation.",
+      "options": [
+        {
+          "label": "DOCUMENTED",
+          "is_correct": true
+        },
+        {
+          "label": "DEBUNKED",
+          "is_correct": false
+        }
+      ],
+      "explanation": "The FBI's 1992 analysis of ritual abuse allegations found no substantiated cases — the same pattern that recurs in this claim.",
+      "source_id": "src-lanning-1992",
+      "difficulty": 7
+    }
+  ]
+}

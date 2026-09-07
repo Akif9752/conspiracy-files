@@ -462,7 +462,12 @@ Zyklen, Sackgassen und Qualitätsverfall. Deshalb als **kuratierter Pfad-Generat
 
 ### Regeln eines Runs
 
-1. **Monotone Tiefe:** `obscurity(n+1) ≥ obscurity(n) − 1`, im Mittel steigend.
+1. **Monotone Tiefe:** `obscurity(next) ≥ high_water_mark − 1`, wobei der
+   High-Water Mark die höchste im Run bisher erreichte Obskurität ist.
+   **Ausnahme: `documented_basis`-Kanten sind von dieser Regel befreit.**
+   Ohne die Ausnahme blockiert die Regel systematisch genau den Kantentyp,
+   der den Run erden soll — nachgewiesen im Trockenlauf, siehe
+   [`05-DRY-RUN.md`](05-DRY-RUN.md) Befund F-3.
 2. **Keine Wiederholung** innerhalb eines Runs.
 3. **Wahl statt Autoplay:** Jeder Knoten bietet **2–3 Wege**, jeweils beschriftet
    mit dem *Relationstyp*, nicht nur dem Titel:
@@ -476,6 +481,14 @@ Zyklen, Sackgassen und Qualitätsverfall. Deshalb als **kuratierter Pfad-Generat
 4. **Mindestens ein `DOCUMENTED_BASIS`-Weg alle 4 Knoten**, wo verfügbar.
    Verhindert, dass ein Run monoton immer weiter ins Unbelegte kippt.
 5. **Ende:** Kein gültiger nächster Knoten → `BOTTOM REACHED`.
+6. **Anchor-Schritte:** `documented_basis`-Schritte werden in der
+   Pfaddarstellung eigens markiert (*„hier bist du kurz aufgetaucht"*). Sie
+   zählen zur Tiefe, aber nicht zum Obskuritätsverlauf. Bei gleichwertigen
+   Kandidaten bevorzugt der Generator einen Nicht-Anchor-Knoten als Endknoten,
+   damit ein Run nicht auf einem sehr bekannten File endet (Befund F-5).
+7. **Bidirektional:** Kanten werden in beide Richtungen begangen; die
+   Wegbeschriftung richtet sich nach der Laufrichtung (`rationale_reverse`).
+   Ohne Rückwärtstraversierung ist der Graph praktisch unbegehbar (Befund F-4).
 
 ### Node Card (das UI-Atom des Runs)
 
@@ -515,7 +528,8 @@ MOON LANDING HOAX  →  Project Blue Book  →  Majestic 12
  →  … →  PROJECT SUNSHINE
 
 4 DEBUNKED · 6 DOCUMENTED · 4 UNVERIFIED
-DEEPEST OBSCURITY: 8/10
+DEEPEST OBSCURITY: 8/10        ← High-Water Mark des Runs,
+                                  nicht die Obskurität des Endknotens
 
 [ SHARE PATH ]   [ SAVE TO CASE LOG ]
 ```
@@ -884,6 +898,7 @@ Algorithmische Regale (Trending, Most Read) werden freigeschaltet, sobald
 | Mobile Dev (RN) | 2 Personen, 5 Monate |
 | Backend / Data | 1 Person, 4 Monate |
 | **Content Lead + 3 Autoren** | **6 Monate — der eigentliche kritische Pfad** |
+| *(Aufwand je Tier-A-File nach Trockenlauf auf 6–9 h korrigiert: Quellen-Zweitprüfung, Verkantung und Quizproduktion kommen zum Schreiben hinzu)* | |
 | Fact-Checker (Teilzeit) | 4 Monate |
 
 **Realistisch: 6–7 Monate bis Store-Launch.** Der Engpass ist der Content,
@@ -986,7 +1001,7 @@ es sei denn, man staffelt die Tiefe.
 
 | Tier | Umfang | Aufwand/Stück | Launch | Jahr 1 |
 |---|---|---|---|---|
-| **A — FULL FILE** | Alle Abschnitte, Claim-Breakdown, 8–15 Quellen, 5+ Kanten, 5 Quizfragen | 4–6 h | 150 | 600 |
+| **A — FULL FILE** | Alle Abschnitte, Claim-Breakdown, 8–15 Quellen, 5+ Kanten, 5 Quizfragen | 6–9 h | 150 | 600 |
 | **B — FILE** | Claim, Origin, Story kurz, Status, 3–5 Quellen, 3 Kanten | 1,5–2 h | 150 | 900 |
 | **C — INDEX ENTRY** | 1 Absatz, Status, 1–3 Quellen, 1–2 Kanten | 20–30 min | 700 | 4.000 |
 
@@ -998,6 +1013,27 @@ ehrlich und bezahlbar.
 **Launch-Ziel: ~1.000 Einträge.** Das reicht für 20–30 Level tiefe Runs,
 600+ Quizfragen und ein Archiv, das sich groß anfühlt. 10.000 leere Einträge
 fühlen sich kleiner an als 1.000 gute.
+
+### Die Produktionseinheit ist das Cluster, nicht das File
+
+Aus dem Trockenlauf (Befund F-2): Ein einzeln geschriebenes File hat keine
+Kanten, weil seine Nachbarn fehlen — und ohne Kanten ist es im Rabbit Hole
+unsichtbar. Zwei der zehn Referenz-Files scheiterten genau daran.
+
+> **Der Redaktionsplan wird nicht nach Bekanntheit sortiert abgearbeitet,
+> sondern in Clustern von 8–15 zusammenhängenden Files, die gemeinsam
+> recherchiert, verkantet und freigegeben werden.**
+
+Empfohlene Cluster-Form: **ein Tier-A-Anker plus mehrere Tier-B-Satelliten**
+statt gleichrangiger Tier-A-Files. Tier B ist nicht nur billiger, sondern
+erreicht die Freigabeschwelle deutlich schneller.
+
+Bei Tier-3-Inhalten ist die Cluster-Regel zwingend: Ein Hassnarrativ ohne
+seine historischen Vorläufer im selben Cluster wird dem Leser ohne das Muster
+präsentiert, das es lesbar macht — und darf deshalb nicht publiziert werden.
+
+**Kantendichte-Ziel: ≥ 2.000 Kanten auf 1.000 Einträge, mindestens 4 je File,
+5 je Tier-A-File.** Diese Zahl ist aus dem Trockenlauf gemessen, nicht geschätzt.
 
 ### Produktionspipeline
 
@@ -1205,6 +1241,8 @@ Dokumentenübersicht:
 - [`01-DATA-MODEL.md`](01-DATA-MODEL.md) — Entitäten, Beziehungen, DDL, Scores
 - [`02-EDITORIAL-POLICY.md`](02-EDITORIAL-POLICY.md) — Evidenzsystem, Harm-Tiers, Quellenregeln, Publish-Gates
 - [`03-MVP-SCOPE.md`](03-MVP-SCOPE.md) — Feature-Priorisierung, Cut-Liste, Roadmap, Metriken
+- [`04-WRITING-STANDARD.md`](04-WRITING-STANDARD.md) — Schreibstandard für Autor:innen
+- [`05-DRY-RUN.md`](05-DRY-RUN.md) — Trockenlauf der 10 Referenz-Files: sieben Befunde, vier davon mit Änderungsfolge
 
 ---
 
